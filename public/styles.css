@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 0;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+
+  font: 20px "Red Rose", cursive;
+  background-color: #f8f9fa;
+}
+/*#c61f25 #cb2b2a */
+nav {
+  background-color: #cb2b2a;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+
+}
+
+nav ul li a {
+  margin: 20px;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  color: rgb(199, 199, 199);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  height: 30vh;
+  margin-top: 40px;
+}
+
+.home img {
+  height: 70vh;
+  margin-top: -25vh;
+}

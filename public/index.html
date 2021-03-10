@@ -5,35 +5,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;500;600;700&display=swap" rel="stylesheet">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
   <title>Ema-jr</title>
 </head>
 <body>
   <header>
-    <nav id="navbar">
+    <nav id="navbar" class="transparent">
       <ul>
         <li><a class="active" href="#">Início</a></li>
         <li><a href="#">Sobre nós</a></li>
-        <li><a href="#">Serviços</a></li>
         <li><a href="#">Portifólio</a></li>
+        <li><a href="#">Membros</a></li>
         <li><a href="#">Contato</a></li>
+        <li><a href="#">Serviços</a></li>
       </ul>
     </nav>
   </header>
   
   <div class="home">
-    <a href="#"><img id="logo" src="../src/images/logo.png" alt="logo" /></a>
-    <img id="slogan" src="../src/images/slogan.png" alt="slogan" />
+    <img id="logo" src="../src/images/logo-white.png" alt="logo" />
+    <h1 class="first-title" id="title-first">NOSSAS IDEIAS</h1>
+    <h1 class="first-title" id="title-second">SUA SOLUÇÃO</h1>
   </div>
+  <div id="particles-container"></div>
 
-  
-  
+  <div id="about">
+    <h2 class="titles">SOBRE NÓS</h2>
 
-
+    <div id="about1" >
+      <img class="about-image" src="../src/images/about-image1.png" alt="about-image-1" />
+      <h3 class="about-title">Titulo</h3>
+      <p class="about-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab veritatis ipsam recusandae placeat ipsa omnis pariatur. Aspernatur est error a inventore temporibus, molestias ipsam fugit soluta quo laboriosam praesentium sunt ad debitis mollitia beatae nisi necessitatibus doloremque maiores veniam reprehenderit laborum dolor repudiandae. Saepe expedita eaque cupiditate obcaecati tenetur provident at eligendi dolor laudantium omnis qui mollitia error beatae autem officiis impedit quas velit, quae sapiente optio iste odit. Tempora possimus ipsam nihil tenetur. Necessitatibus consequuntur vitae odit earum quod, pariatur accusamus similique? Dolorem accusantium fugiat deserunt atque earum adipisci nesciunt facere nemo necessitatibus totam eaque enim id, minus corporis.</p>
+    </div>
+    <div id="about2">
+      <h3 class="about-title">Titulo</h3>
+      <img class="about-image" src="../src/images/about-image2.png" alt="about-image-2" />
+      <p class="about-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab veritatis ipsam recusandae placeat ipsa omnis pariatur. Aspernatur est error a inventore temporibus, molestias ipsam fugit soluta quo laboriosam praesentium sunt ad debitis mollitia beatae nisi necessitatibus doloremque maiores veniam reprehenderit laborum dolor repudiandae. Saepe expedita eaque cupiditate obcaecati tenetur provident at eligendi dolor laudantium omnis qui mollitia error beatae autem officiis impedit quas velit, quae sapiente optio iste odit. Tempora possimus ipsam nihil tenetur. Necessitatibus consequuntur vitae odit earum quod, pariatur accusamus similique? Dolorem accusantium fugiat deserunt atque earum adipisci nesciunt facere nemo necessitatibus totam eaque enim id, minus corporis.</p>
+    </div>
+  </div>
 
   <script src="scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

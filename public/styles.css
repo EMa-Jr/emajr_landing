@@ -104,30 +104,90 @@ nav ul li a:hover {
 
 #particles-container{ 
   position: absolute; 
-  width: 100vw; 
-  height: 100vh; 
+  width: 200%; 
+  height: 150%; 
   background: linear-gradient(100deg, #030130, #0c1f59, #030130);
   background-size: cover; 
   background-position: 0% 0%;
   z-index: -10;
-  margin-top: -30vh;
+  margin-top: -90vh;
+  margin-left: -20vw;
+
+  transform: rotate(-3deg);
 }
 /*---------------------------------------------------------ABOUT------------------------------------------------------------------*/
 #about {
-  margin-top: 80vh;
+  margin-top: 70vh;
+}
+
+#about1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5vw;
+}
+
+#about2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5vw;
 }
 
 .titles {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  font: 2.5vw Poppins, sans-serif;
+  font-weight: 600;
+  color: #cc0003;
 }
 
 .about-title{
+  padding: 1vw;
+  font: 2vw Poppins, sans-serif;
+  font-weight: 400;
 }
 
 .about-image {
+  padding: 1vw;
 }
 
 .about-content {
+  padding: 1vw;
+  text-align: justify;
+}
+
+/*---------------------------------------------------------PATROCINADORES------------------------------------------------------------------*/
+
+.clients {
+  background: linear-gradient(100deg, #030130, #0c1f59, #030130);
+  height: 35vh;
+  width: 100vw;
+}
+
+.clients h4 {
+  font: 2vw Poppins, sans-serif;
+  font-weight: 700;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw;
+}
+
+#clients-logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 1vw;
+}
+
+.clients-images {
+  height: 8vw;
 }

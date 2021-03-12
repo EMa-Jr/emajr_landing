@@ -1,7 +1,5 @@
 :root {
-  --width: 100vw;
-  --height: 100vh;
-  --proporcionalidade: calc(var(--width)/var(--height));
+  overflow-x: hidden;
 }
 
 * {
@@ -110,9 +108,9 @@ nav ul li a:hover {
 
 #particles-container{ 
   position: absolute; 
-  width: 200%; 
+  width: 125%; 
   height: 150%; 
-  background: linear-gradient(100deg, #030130, #0c1f59, #030130);
+  background: linear-gradient(70deg, #02011d,#030130, #0c1f59);
   background-size: cover; 
   background-position: 0% 0%;
   z-index: -10;
@@ -155,7 +153,7 @@ nav ul li a:hover {
 .about-title{
   padding: 1vw;
   font: 2vw Poppins, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .about-image {
@@ -165,17 +163,18 @@ nav ul li a:hover {
 .about-content {
   padding: 1vw;
   text-align: justify;
+  color: rgba(0,0,0,0.7);
 }
 
 /*---------------------------------------------------------CLIENTS------------------------------------------------------------------*/
 
-.clients {
+#clients {
   background: linear-gradient(100deg, #030130, #0c1f59, #030130);
   height: 35vh;
   width: 100vw;
 }
 
-.clients h4 {
+#clients h4 {
   font: 2vw Poppins, sans-serif;
   font-weight: 700;
   color: white;
@@ -202,15 +201,15 @@ nav ul li a:hover {
 #particles-membros{ 
   position: absolute; 
   width: 100%; 
-  height:120%;
+  height: auto;
   background: linear-gradient(100deg, #030130, #0c1f59, #030130);
-  background-size: cover; 
+  background-size: cover;
   background-position: 0% 0%;
   z-index: -10;
   margin-top: -52vw;
 }
 
-.membros h2 {
+#membros h2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -251,6 +250,195 @@ nav ul li a:hover {
   padding: 2vw;
 }
 .membros-card img {
-  height: 10vw;
+  height: 12vw;
   margin: 1vw;
+  margin: 0;
+}
+
+/*---------------------------------------------------------CONTATO------------------------------------------------------------------*/
+#contato h2 {
+  margin-top: 50px;
+
+}
+.contato-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contato-form input{
+  border-radius: 6px;
+  margin: 5px;
+  padding: 3px;
+  color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.1);
+  outline: none;
+  font-size: 1.3vw;
+}
+
+#femail, #fcel {
+  width: calc(15vw - 10px);
+}
+
+#fname, #fassunto {
+  width: 30vw;
+}
+
+#fmensagem {
+  width: 30vw;
+  height: 20vh;
+  margin: 5px;
+  margin-left: 10px;
+  border-radius: 6px;
+  padding: 3px;
+  color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.1);
+  outline: none;
+  font-size: 1.3vw;
+
+}
+
+#contato-info {
+  line-height: 10px;
+}
+
+#contato-info h4 {
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+#contato-info div {
+  margin: 20px;
+  margin-bottom: 30px;
+  color: rgba(0,0,0,0.5);
+  font-size: 1vw;
+}
+
+/*---------------------------------------------------------SERVIÇOS------------------------------------------------------------------*/
+#servicos {
+  padding: 50px;
+  margin-top: 100px;
+}
+
+#servicos h2 {
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  color: white;
+}
+
+#servicos h4 {
+  font-weight: 300;
+  letter-spacing: 7px;
+  margin-top: 50px;
+  color: white;
+}
+
+#servicos-boxtitle {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.servicos-section {
+  height: auto;
+  background-color: white;
+  border-radius: 15px 5px 5px 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.servicos-squares {
+  display: flex;
+}
+
+.servicos-square1 {
+  background-color: white;
+  height: 200px;
+  width: calc(66vw - 20px);
+  border-radius: 15px 5px 5px 5px;
+}
+
+.servicos-square2 {
+  background-color: white;
+  height: 200px;
+  width: calc(33vw - 20px);
+  margin-left: 20px;
+  border-radius: 15px 5px 5px 5px;
+}
+
+#particles-servicos{ 
+  position: relative; 
+  width: 100%; 
+  height: 1350px;
+  background: linear-gradient(90deg, #271a6c, #3d3485, #271a6c);
+  background-size: cover;
+  background-position: 0% 0%;
+  margin-top: -1350px;
+  z-index: -10;
+}
+
+@media (min-width: 1367px) {
+  #particles-servicos {
+    margin-top: -1250px;
+    height: 1300px;
+  }
+}
+
+/*---------------------------------------------------------NOSSOS-NÚMEROS------------------------------------------------------------------*/
+#nossos-numeros h2 {
+  font-weight: 800;
+  font-size: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cc0003;
+  margin: 20px;
+  margin-top: 40px;
+  
+}
+
+#nossos-numeros-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nossos-numeros-section div {
+  margin: 50px;
+}
+
+#nossos-numeros-section div img {
+  height: 100px;
+}
+
+#nossos-numeros-icon1 {
+  margin-left: 20px;
+}
+#nossos-numeros-icon2 {
+  margin-left: 80px;
+}
+#nossos-numeros-icon3 {
+  margin-left: 90px;
+}
+
+#nossos-numeros-section p {
+  margin: 0;
+  color: #150b44;
+}
+
+.nossos-numeros-title {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.nossos-numeros-text {
+  font-weight: 300;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
 }

@@ -442,3 +442,121 @@ nav ul li a:hover {
   justify-content: center;
   line-height: 0;
 }
+
+/*---------------------------------------------------------DEPOIMENTOS------------------------------------------------------------------*/
+#depoimentos {
+  background-color: #1a1146;
+  height: auto;
+
+}
+
+#depoimentos h2 {
+  font-weight: 800;
+  font-size: 50px;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px;
+}
+
+.depoimentos-balao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 20px 50px;
+}
+
+.depoimentos-content {
+  background-color: #3566cd;
+  height: 200px;
+  width: 30vw;
+
+  padding: 20px;
+  padding-left: 100px;
+  margin-left: -100px;
+  border-top-right-radius: 50px;
+}
+
+#depoimentos-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding-bottom: 50px;
+}
+
+.depoimentos-image {
+  position: relative;
+  height: 200px;
+  padding: 0px;
+  border-radius: 50%;
+
+}
+
+.depoimentos-autor {
+  color: white;
+  font-weight: 500;
+
+  padding: 0;
+  margin-bottom: -40px;
+  padding-left: 10px;
+}
+
+.depoimentos-rating {
+  display: flex;
+  align-items: center;
+
+  margin: 20px;
+}
+
+.depoimentos-icone{
+  height: 15px;
+  margin: 20px 0px 20px -10px;
+}
+
+.depoimentos-avaliacao {
+  color:white;
+  font-weight: 200;
+  font-size: 15px;
+
+  margin: 20px 10px;
+}
+
+.depoimentos-text {
+  color: white;
+  font-weight: 200;
+  font-size: 12px;
+
+  padding: 10px;
+  margin-top: -30px;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+
+footer p {
+  color: #1a1146;
+  margin: 0;
+
+  font-weight: 300;
+}
+
+footer strong {
+  font-weight: 600;
+}
+
+footer a img {
+  height: 30px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}

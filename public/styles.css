@@ -145,7 +145,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
 
-  font: 2.5vw Poppins, sans-serif;
+  font: 3.5vw Poppins, sans-serif;
   font-weight: 600;
   color: #cc0003;
 }
@@ -196,6 +196,57 @@ nav ul li a:hover {
 .clients-images {
   height: 8vw;
 }
+
+/*---------------------------------------------------------PORTFÓLIO------------------------------------------------------------------*/
+#portfolio{
+  margin-top: 30px;
+}
+
+.card {
+  border: 0px;
+}
+
+.card-img-top {
+  border-radius: 15px;
+}
+
+.portfolio-card-title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #030130;
+  text-align: justify;
+}
+
+.portfolio-card-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: #030130;
+
+  margin-bottom: 0px;
+  text-align: justify;
+}
+
+.portfolio-card-date {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.portfolio-card-button {
+  border-radius: 15px 15px 5px 5px;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+
+  background-color: #030130;
+  padding: 2px 10px;
+  margin-top: 0;
+}
+
+.portfolio-card-button-div {
+  display: flex;
+  justify-content: flex-start;
+}
+
 
 /*---------------------------------------------------------MEMBROS------------------------------------------------------------------*/
 #particles-membros{ 

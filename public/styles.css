@@ -162,14 +162,14 @@ nav ul li a:hover {
 }
 /*---------------------------------------------------------ABOUT------------------------------------------------------------------*/
 #about {
-  margin-top: 20vh;
+  margin-top: 40vh;
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 1fr;
 
   padding: 0 15vw;
 }
 
-hr {
+#about1 hr {
   border: 10px solid #0c1f59;
   width: 30vw;
 }
@@ -180,7 +180,6 @@ hr {
   flex-direction: column;
 
   padding: 0.5vw;
-
 }
 
 #about-image1 {
@@ -188,11 +187,14 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  margin-top: 30vh;
+  margin-left: 5vw;
 }
 
 #about-image2 {
   height: 30vw;
-  margin: 10vw 10vw 3vw 10vw;
+  margin: 5vw;
 }
 
 #about2 {
@@ -271,19 +273,7 @@ hr {
 
 /*---------------------------------------------------------PORTFÓLIO------------------------------------------------------------------*/
 #portfolio{
-  margin-top: 30px;
-}
-
-.card {
-  border: 0px;
-}
-
-.card-img-top {
-  border-radius: 15px;
-}
-
-.card-body {
-  margin-left: -13px;
+  margin: 10vh 5vw 20vh 5vw;
 }
 
 .portfolio-card-title {
@@ -323,7 +313,27 @@ hr {
   justify-content: flex-start;
 }
 
+/* external css: flickity.css */
 
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #e6e7e9;
+}
+
+.carousel-cell {
+  width: 30%;
+  height: 60vh;
+  margin: 0 2vh;
+  background: #e6e7e9;
+  border-radius: 5px;
+}
+
+.carousel-image {
+  height: 35vh;
+  border-radius: 50px 50px 10px 10px;
+}
 /*---------------------------------------------------------MEMBROS------------------------------------------------------------------*/
 #particles-membros{ 
   position: absolute; 
@@ -384,6 +394,10 @@ hr {
 }
 
 /*---------------------------------------------------------CONTATO------------------------------------------------------------------*/
+#contato {
+  margin-top: 10vh;
+  margin-bottom: 30vh;
+}
 #contato h2 {
   margin-top: 80px;
   margin-bottom: 50px;
@@ -426,6 +440,9 @@ hr {
   font-size: 1.3vw;
 
 }
+::placeholder {
+  color: rgba(0,0,0,0.3);
+}
 
 #contato-info {
   line-height: 10px;
@@ -441,6 +458,19 @@ hr {
   margin-bottom: 30px;
   color: rgba(0,0,0,0.5);
   font-size: 1vw;
+}
+
+#fbutton {
+  color: rgba(0,0,0,0.3);
+  font-weight: 500;
+  font-size: 1.5vw;
+  border-radius: .3vw;
+
+  background-color: rgba(0,0,0,0.1);
+  padding: 2px 10px;
+  position: relative;
+  top: 5vh;
+  left: -18vw;
 }
 
 /*---------------------------------------------------------SERVIÇOS------------------------------------------------------------------*/

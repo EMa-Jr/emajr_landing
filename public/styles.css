@@ -31,33 +31,6 @@ nav {
   height: auto;
 }
 
-::-webkit-scrollbar-track
-{
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
-  background-color: #F5F5F5;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar
-{
-  width: 10px;
-  background-color: #F5F5F5;
-}
-
-::-webkit-scrollbar-thumb
-{
-  border-radius: 10px;
-  background-color: #FFF;
-  background-image: -webkit-linear-gradient(top,
-                        #e4f5fc 0%,
-                        #bfe8f9 50%,
-                        #9fd8ef 51%,
-                        #2ab0ed 100%);
-}
-
-
-
-
 .transparent {
   border-width: 0px;
   -webkit-box-shadow: 0px 0px;
@@ -161,6 +134,24 @@ nav ul li a:hover {
 
 }
 /*---------------------------------------------------------ABOUT------------------------------------------------------------------*/
+#bttbutton {
+  display: none;
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #0c1f59;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+#bttbutton:hover {
+  background-color: #123b77;
+}
+
 #about {
   margin-top: 40vh;
   display: grid;
@@ -308,6 +299,11 @@ nav ul li a:hover {
   margin-top: 0;
 }
 
+.carousel-cell button a {
+  text-decoration: none;
+  color: white;
+}
+
 .portfolio-card-button-div {
   display: flex;
   justify-content: flex-start;
@@ -320,6 +316,9 @@ body { font-family: sans-serif; }
 
 .carousel {
   background: #e6e7e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-cell {
@@ -477,27 +476,33 @@ body { font-family: sans-serif; }
 #servicos {
   padding: 50px;
   margin-top: 100px;
+  background: linear-gradient(90deg, #271a6c, #3d3485, #271a6c);
 }
 
 #servicos h2 {
-  font-weight: 800;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
   color: white;
+  font-size: 3.5vw;
 }
 
 #servicos h4 {
-  font-weight: 300;
-  letter-spacing: 7px;
-  margin-top: 50px;
+  font-weight: 700;
   color: white;
+  margin: 1vw 1vw 0 1vw;
+  font-size: 2vw;
 }
 
 #servicos-boxtitle {
   display: flex;
   justify-content: flex-end;
+}
+
+.servicos-box {
+  display: flex;
 }
 
 .servicos-section {
@@ -506,10 +511,16 @@ body { font-family: sans-serif; }
   border-radius: 15px 5px 5px 5px;
   padding: 10px;
   margin-bottom: 20px;
+  width: auto;
+  margin: .7vw;
 }
 
 .servicos-title {
-  font-weight: 600;
+  font-weight: 300;
+  letter-spacing: 7px;
+  margin-top: 50px;
+  color: white;
+  margin: 1.2vw;
 }
 
 .servicos-squares {
@@ -531,7 +542,7 @@ body { font-family: sans-serif; }
   border-radius: 15px 5px 5px 5px;
 }
 
-#particles-servicos{ 
+/*#particles-servicos{ 
   position: relative; 
   width: 100%; 
   height: 1350px;
@@ -540,7 +551,7 @@ body { font-family: sans-serif; }
   background-position: 0% 0%;
   margin-top: -1350px;
   z-index: -10;
-}
+}*/
 
 @media (min-width: 1367px) {
   #particles-servicos {
@@ -552,12 +563,13 @@ body { font-family: sans-serif; }
 /*---------------------------------------------------------NOSSOS-NÚMEROS------------------------------------------------------------------*/
 #nossos-numeros h2 {
   font-weight: 800;
-  font-size: 30px;
+  font-size: 2.5vw;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #cc0003;
+  color: #123b77;
+
   margin: 20px;
   margin-top: 40px;
   

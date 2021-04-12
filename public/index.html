@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/feather-icons"></script>
   <link href="styles.css" rel="stylesheet">
 
 
@@ -44,7 +44,7 @@
 
 <!---------------------------------------------------------SOBRE NÓS------------------------------------------------------------>
 
-
+  <button onclick="backToTop()" id="bttbutton" title="go to top"><i data-feather="arrow-up"></i></button>
   <div id="about">
 
     <div id="about1" >
@@ -88,24 +88,24 @@
   <h1 class="titles">PORTFÓLIO</h1>
 
   <!-- Flickity HTML init -->
-  <div class="carousel" data-flickity='{ "wrapAround": true }'>
+  <div class="carousel">
     <div class="carousel-cell">
       <img class="carousel-image" src="../src/images/portfolio-ceramica.jpg" alt="carousel-image" />
       <p class="portfolio-card-title">Cerâmicas</p>
       <p class="portfolio-card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo corporis nulla quas similique laborum beatae iste aut accusamus dolorum aliquam.</p>
-      <button class="portfolio-card-button">Ver mais</button>
+      <button class="portfolio-card-button"><a href="#servicos-ceramicos">Ver mais</a></button>
     </div>
     <div class="carousel-cell">
       <img class="carousel-image" src="../src/images/portfolio-polimeros.png" alt="carousel-image" />
       <p class="portfolio-card-title">Polímeros</p>
       <p class="portfolio-card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo corporis nulla quas similique laborum beatae iste aut accusamus dolorum aliquam.</p>
-      <button class="portfolio-card-button">Ver mais</button>
+      <button class="portfolio-card-button"><a href="#servicos">Ver mais</a></button>
     </div>
     <div class="carousel-cell">
       <img class="carousel-image" src="../src/images/portfolio-metais.jpg" alt="carousel-image" />
       <p class="portfolio-card-title">Metais</p>
       <p class="portfolio-card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo corporis nulla quas similique laborum beatae iste aut accusamus dolorum aliquam.</p>
-      <button class="portfolio-card-button">Ver mais</button>
+      <button class="portfolio-card-button"><a href="#servicos-metalicos">Ver mais</a></button>
     </div>
   </div>
 </div>
@@ -225,35 +225,230 @@
 
   <div id="servicos">
     <h2>SERVIÇOS</h2>
-    <div>
-      <h4>MATERIAIS POLIMÉRICOS</h4>
-      <div class="servicos-section">
-        <p class="servicos-title">Lorem ipsum.</p>
-        <p class="servicos-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus perspiciatis doloribus deserunt facilis voluptates sequi laudantium numquam nesciunt repudiandae non dolore aliquam architecto vel facere nam, impedit magnam quia aspernatur quidem pariatur aliquid recusandae est. Iusto, laboriosam nisi quisquam ipsa a veritatis quod, dicta obcaecati ab animi est, ratione provident facilis velit! Voluptates esse assumenda consequuntur, velit aut, repellendus iure, corporis illum neque exercitationem quod porro dignissimos. Saepe sint at sapiente soluta in accusamus suscipit unde dolorem, quidem veritatis dignissimos reprehenderit explicabo aperiam itaque illo similique. Eaque dolorum totam deleniti. Cum quae ipsa quod hic est laudantium nemo, sed molestias!</p>
+    <div id="servicos-ceramicos">
+      <h4>CERÂMICOS</h4>
+      <p class="servicos-title">ANÁLISES FÍSICAS</p>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Ensaio de abrasão</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Ensaio de perda ao fogo</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Metrologia</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div> 
       </div>
-      <div class="servicos-squares">
-        <div class="servicos-square1"></div>
-        <div class="servicos-square2"></div>
+
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Absorção de água</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Dilatometria</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+      </div>
+
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Granulometria por peneiramento</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Picnometria de hélio</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Porosimetria por intrusão de mercúrio</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div> 
+      </div>
+
+      <p class="servicos-title">ANÁLISES MECÂNICAS</p>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Compressao</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Flexão</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+      </div>
+
+      <p class="servicos-title">ANÁLISES MICROSCÓPICAS</p>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Análise por lupa estereográfica</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Microscopia eletrônica de varredura com EDS</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Microscopia eletrônica de varredura sem EDS</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+      </div>
+
+      <p class="servicos-title">ANÁLISES QUÍMICAS</p>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Difração de raios X</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Fluorescência de raios-X com WDS</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Fluorescência de raios-X sem WDS</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+      </div>
+
+      <p class="servicos-title">ANÁLISES REOLÓGICAS</p>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Determinação da viscosidade</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Viscosimetria brookfield</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+      </div>
+
+      <p class="servicos-title">ANÁLISES TÉRMICAS</p>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Calorimetria diferencial exploratória - DSC</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Termogravimetria - TGA</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
       </div>
     </div>
-    <div>
-      <h4 id="servicos-boxtitle">MATERIAIS METÁLICOS</h4>
-      <div class="servicos-section">
-        <p class="servicos-title">Lorem ipsum.</p>
-        <p class="servicos-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus perspiciatis doloribus deserunt facilis voluptates sequi laudantium numquam nesciunt repudiandae non dolore aliquam architecto vel facere nam, impedit magnam quia aspernatur quidem pariatur aliquid recusandae est. Iusto, laboriosam nisi quisquam ipsa a veritatis quod, dicta obcaecati ab animi est, ratione provident facilis velit! Voluptates esse assumenda consequuntur, velit aut, repellendus iure, corporis illum neque exercitationem quod porro dignissimos. Saepe sint at sapiente soluta in accusamus suscipit unde dolorem, quidem veritatis dignissimos reprehenderit explicabo aperiam itaque illo similique. Eaque dolorum totam deleniti. Cum quae ipsa quod hic est laudantium nemo, sed molestias!</p>
+
+    
+    <div id="servicos-metalicos">
+      <h4 id="servicos-boxtitle">METÁLICOS</h4>
+      <p class="servicos-title">ANÁLISES FÍSICAS</p>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Granulometria por peneiramento</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Metrologia</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Picnometria a Hélio</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
       </div>
-      <div class="servicos-squares">
-        <div class="servicos-square1"></div>
-        <div class="servicos-square2"></div>
+
+      <p class="servicos-title">ANÁLISES MECÂNICAS</p>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Compressao</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Dureza</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+      </div>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Impacto</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Tração</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+      </div>
+
+      <p class="servicos-title">ANÁLISES MICROSCÓPICAS</p>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Análise por lupa estereográfica</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Microscopia eletrônica de varredura com EDS</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+      </div>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Microscopia eletrônica de varredura sem EDS</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Microscopia ótica</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+      </div>
+
+      <p class="servicos-title">ANÁLISES QUÍMICAS</p>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Difração de raios X</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Fluorescência de raios-X com WDS</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Fluorescência de raios-X sem WDS</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+      </div>
+
+      <p class="servicos-title">ANÁLISES TÉRMICAS</p>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Calorimetria diferencial exploratória - DSC</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Ciclo térmico</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Dilatometria</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+      </div>
+      <div class="servicos-box">
+        <div class="servicos-section">
+          <strong>Envelhecimento</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
+        <div class="servicos-section">
+          <strong>Termogravimetria - TGA</strong>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, atque cumque soluta in harum suscipit minus numquam quis, neque autem dolores, obcaecati natus? Nulla, possimus?</p>
+        </div>
       </div>
     </div>
   </div>
-  <div id="particles-servicos"></div>
 
 <!---------------------------------------------------------NOSSOS NÚMEROS------------------------------------------------------->
 
   <div id="nossos-numeros">
-    <h2>NOSSO NÚMEROS</h2>
+    <h2>NOSSOS NÚMEROS</h2>
     <div id="nossos-numeros-section">
       <div>
         <img id="nossos-numeros-icon1" src="../src/images/icon-clock.png" alt="clock">
@@ -396,7 +591,8 @@
   </footer>
 
   <script src="scripts.js"></script>
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script>feather.replace()</script>
+
 </body>
 </html>

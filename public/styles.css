@@ -138,15 +138,12 @@ nav ul li a:hover {
 }
 
 @media (max-width: 1025px) {
-  :root {
-    overflow-x: hidden;
-  }
   nav ul li a {
     margin: .5vh;
   }
 
   #navbar {
-    margin-right: -20vh;
+    margin-right: -10vh;
   }
 
   #logo {
@@ -156,7 +153,7 @@ nav ul li a:hover {
   }
 
   #particles-container {
-    width: 170%;
+    width: 140vw;
   }
 
   #First-title {
@@ -166,9 +163,9 @@ nav ul li a:hover {
   }
 
   #Subtitle {
-    font-size: 3vh;
+    font-size: 2.3vh;
     top: 2vh;
-    left: 10vh;
+    left: 6.8vh;
   }
 }
 /*---------------------------------------------------------ABOUT------------------------------------------------------------------*/
@@ -260,6 +257,41 @@ nav ul li a:hover {
   color: #152e54;
 }
 
+@media (max-width: 1025px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about hr {
+    border: 5px solid #0c1f59;
+    width: 30vh;
+  }
+
+  #about h2 {
+    font-size: 5vh;
+    margin: -1.75vh 0;
+  }
+
+  .about-title {
+    font-size: 3.5vh;
+    font-weight: 600;
+  }
+
+  .about-content {
+    font-size: 2.75vh;
+  }
+
+  #about-image1 {
+    height: 100%;
+    width: 40vh;
+    margin-top: -2vh;
+  }
+  #about-image2 {
+    display: none;
+  }
+}
+
 /*---------------------------------------------------------NOSSOS-CLIENTES------------------------------------------------------------------*/
 
 #clients {
@@ -298,6 +330,28 @@ nav ul li a:hover {
 .clients-image-renault {
   height: 7vw;
   margin-top: -20px;
+}
+
+@media (max-width: 1025px) {
+  #clients {
+    height: auto;
+  }
+  
+  #clients h4 {
+    font-size: 5vh;
+    margin-bottom: -3vh;
+  }
+
+  .clients-images {
+    height: 20vh;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+  }
+
+  #clients-logo-section {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*---------------------------------------------------------PORTFÓLIO------------------------------------------------------------------*/
@@ -371,6 +425,47 @@ body { font-family: sans-serif; }
   height: 35vh;
   border-radius: 50px 50px 10px 10px;
 }
+
+@media (max-width: 1025px) {
+  #portfolio h1 {
+    font-size: 7vh;
+    margin-top: -3vh;
+  }
+  
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-cell {
+    margin: 2vh 3vh 8vh 0;
+    width: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-image {
+    border-radius: 50vh;
+  }
+
+  .portfolio-card-title {
+    font-size: 5vh;
+  }
+
+  .portfolio-card-text {
+    font-size: 3vh;
+  }
+
+  .portfolio-card-button {
+    font-size: 3vh;
+    padding: 1vh 2vh;
+  }
+}
 /*---------------------------------------------------------MEMBROS------------------------------------------------------------------*/
 #particles-membros{ 
   position: absolute; 
@@ -437,6 +532,48 @@ body { font-family: sans-serif; }
   height: 12vw;
   margin: 1vw;
   margin: 0;
+}
+
+@media (max-width: 1025px) {
+  #membros {
+    margin-top: -30vh;
+  }
+
+  #membros h2 {
+    font-size: 5vh;
+    position: relative;
+    top: 9vh;
+  }
+
+  .membros-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #particles-membros {
+    height: 205vh;
+    margin-top: -197vh;
+  }
+
+  .membros-card img {
+    height: 20vh;
+  }
+
+  .membros-text {
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .membros-text p:first-child {
+    font-size: 3vh;
+  }
+
+  .membros-text p:last-child {
+    font-size: 2vh;
+  }
 }
 
 /*---------------------------------------------------------CONTATO------------------------------------------------------------------*/
@@ -524,6 +661,59 @@ body { font-family: sans-serif; }
   margin-top: 10px;
 }
 
+@media (max-width: 1025px) {
+  #contato {
+    margin-bottom: 0;
+  }
+  
+  #contato h2 {
+    font-size: 7vh;
+  }
+
+  .contato-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contato-form input,
+  #fmensagem {
+    font-size: 4vh;
+    width: 90vw;
+  }
+
+  #fcel {
+    position: relative;
+    left: .8vh;
+  }
+
+  #contato-info {
+    line-height: 3vh;
+    margin: .5vh;
+  }
+
+  #contato-info h4 {
+    font-size: 4vh;
+  }
+
+  #contato-info p {
+    font-size: 3vh;
+  }
+
+  .redes-sociais {
+    margin: .5vh;
+    height: 5vh;
+  }
+
+  #fbutton {
+    font-size: 3.5vh;
+    position: relative;
+    top: 1vh;
+    left: 2.5vh;
+  }
+}
+
 /*---------------------------------------------------------SERVIÇOS------------------------------------------------------------------*/
 #servicos {
   padding: 50px;
@@ -608,21 +798,42 @@ body { font-family: sans-serif; }
   border-radius: 15px 5px 5px 5px;
 }
 
-/*#particles-servicos{ 
-  position: relative; 
-  width: 100%; 
-  height: 1350px;
-  background: linear-gradient(90deg, #271a6c, #3d3485, #271a6c);
-  background-size: cover;
-  background-position: 0% 0%;
-  margin-top: -1350px;
-  z-index: -10;
-}*/
-
 @media (min-width: 1367px) {
   #particles-servicos {
     margin-top: -1250px;
     height: 1300px;
+  }
+}
+
+@media (max-width: 1025px) {
+  #servicos h2 {
+    font-size: 7vh;
+    margin-bottom: 0;
+  }
+  
+  .servicos-box {
+    flex-wrap: wrap;
+  }
+
+  #servicos h4 {
+    font-size: 4vh;
+  }
+
+  .servicos-title {
+    margin: 5vw 1.2vw 1.2vw 1.2vw;
+    font-size: 3vh;
+  }
+
+  .servicos-section {
+    padding: 2vh;
+  }
+
+  .servicos-section strong {
+    font-size: 3.5vh;
+  }
+
+  .servicos-section p {
+    font-size: 3.2vh;
   }
 }
 
@@ -670,7 +881,7 @@ body { font-family: sans-serif; }
   color: #150b44;
 }
 
-.nossos-numeros-title {
+.nossos-numeros-title { 
   font-weight: 800;
   font-size: 40px;
 }
@@ -682,6 +893,34 @@ body { font-family: sans-serif; }
   align-items: center;
   justify-content: center;
   line-height: 0;
+}
+
+@media (max-width: 1025px) {
+  #nossos-numeros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #nossos-numeros h2 {
+    font-size: 7vh;
+    margin-left: 10vw;
+  }
+
+  #nossos-numeros-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nossos-numeros-title {
+    font-size: 4.9vh;
+  }
+
+  .nossos-numeros-text {
+    font-size: 4.5vh;
+    line-height: 1vh;
+  }
 }
 
 /*---------------------------------------------------------DEPOIMENTOS------------------------------------------------------------------*/
@@ -775,6 +1014,60 @@ body { font-family: sans-serif; }
   margin-top: -30px;
 }
 
+@media (max-width: 1025px) {
+  #depoimentos h2 {
+    font-size: 6vh;
+  }
+
+  #depoimentos-display {
+    display: flex;
+    flex-direction: column;
+  }
+  .depoimentos-balao {
+    margin: 3vh 1vh;
+    padding: 0;
+  }
+
+  .depoimentos-image {
+    height: 15vh;
+    position: relative;
+    top: -10vh;
+    left: -2.3vh;
+  }
+
+  .depoimentos-autor {
+    margin-top: -1vh;
+    font-size: 3vh;
+  }
+
+  .depoimentos-rating {
+    margin-top: 3vh;
+  }
+
+  .depoimentos-icone{
+    height: 10vh;
+  }
+
+  .depoimentos-content {
+    height: 30vh;
+    width: 70vw;
+  }
+
+  .depoimentos-text {
+    width: 65vw;
+    margin-top: -3.5vh;
+    margin-left: -25vw;
+    font-size: 2vh;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1025px) {
+  .depoimentos-text {
+    font-size: 2.5vh;
+    margin-left: -6vh;
+  }
+}
+
 
 footer {
   display: flex;
@@ -783,6 +1076,7 @@ footer {
   justify-content: center;
 
   margin-top: 20px;
+  text-align: center;
 }
 
 footer p {

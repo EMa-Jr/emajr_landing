@@ -231,7 +231,7 @@ nav ul li a:hover {
 }
 
 #clients h4 {
-  font: 2vw Poppins, sans-serif;
+  font: 3vw Poppins, sans-serif;
   font-weight: 700;
   color: white;
 
@@ -345,6 +345,14 @@ body { font-family: sans-serif; }
   margin-top: -57vw;
 }
 
+#membros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -5vw;
+}
+
 #membros h2 {
   display: flex;
   align-items: center;
@@ -367,6 +375,7 @@ body { font-family: sans-serif; }
 .membros-card {
   display: flex;
   margin-bottom: 3vw;
+  margin: 1vw;
 
 }
 .membros-card p {
@@ -476,7 +485,21 @@ body { font-family: sans-serif; }
 #servicos {
   padding: 50px;
   margin-top: 100px;
-  background: linear-gradient(90deg, #271a6c, #3d3485, #271a6c);
+  /*background: linear-gradient(90deg, #271a6c, #3d3485, #271a6c);*/
+  background-image: url("../src/images/background-teste2.png");
+  background-color: #3d3485;
+  background-repeat: repeat-y;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#servicos-ceramicos, 
+#servicos-metalicos,
+#servicos-polimericos {
+  width: 80vw;
+
 }
 
 #servicos h2 {
@@ -492,7 +515,7 @@ body { font-family: sans-serif; }
 #servicos h4 {
   font-weight: 700;
   color: white;
-  margin: 1vw 1vw 0 1vw;
+  margin: 5vw 1vw 0 1vw;
   font-size: 2vw;
 }
 
@@ -684,12 +707,12 @@ body { font-family: sans-serif; }
   display: flex;
   align-items: center;
 
-  margin: 20px;
+  margin: 1.5vw 1vw 2vw .6vw;
 }
 
 .depoimentos-icone{
-  height: 15px;
-  margin: 20px 0px 20px -10px;
+  height: 1.3vw;
+  margin-left: -1px;
 }
 
 .depoimentos-avaliacao {

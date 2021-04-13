@@ -8,7 +8,10 @@
   list-style: none;
   border: 0;
 }
-
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -133,6 +136,41 @@ nav ul li a:hover {
   color: #123b77;
 
 }
+
+@media (max-width: 1025px) {
+  :root {
+    overflow-x: hidden;
+  }
+  nav ul li a {
+    margin: .5vh;
+  }
+
+  #navbar {
+    margin-right: -20vh;
+  }
+
+  #logo {
+    height: 40vh;
+    top: 30vh;
+    left: 5vh;
+  }
+
+  #particles-container {
+    width: 170%;
+  }
+
+  #First-title {
+    top: 5vh;
+    left: 5vh;
+    font-size: 10vh;
+  }
+
+  #Subtitle {
+    font-size: 3vh;
+    top: 2vh;
+    left: 10vh;
+  }
+}
 /*---------------------------------------------------------ABOUT------------------------------------------------------------------*/
 #bttbutton {
   display: none;
@@ -153,7 +191,7 @@ nav ul li a:hover {
 }
 
 #about {
-  margin-top: 40vh;
+  margin-top: 25vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -479,6 +517,11 @@ body { font-family: sans-serif; }
   position: relative;
   top: 5vh;
   left: -18vw;
+}
+.redes-sociais {
+  height: 30px;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 /*---------------------------------------------------------SERVIÇOS------------------------------------------------------------------*/

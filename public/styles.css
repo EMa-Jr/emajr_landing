@@ -1,5 +1,5 @@
 :root {
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 * {
@@ -114,9 +114,8 @@ nav ul li a:hover {
 }
 
 #particles-container{ 
-  position: absolute; 
-  width: 125%; 
-  height: 130%; 
+  display: block;
+  position: relative; 
   background: linear-gradient(70deg, #02011d,#030130,#0c1f59, #0c1f59);
   background-size: cover; 
   background-position: 0% 0%;
@@ -153,27 +152,48 @@ nav ul li a:hover {
   }
 
   #particles-container {
-    width: 140vw;
+    margin: 0;
+    top: -40vh;
+    height: 60vh;
   }
 
   #First-title {
     top: 5vh;
     left: 5vh;
-    font-size: 10vh;
+    font-size: 9vh;
   }
 
   #Subtitle {
-    font-size: 2.3vh;
+    font-size: 1.7vh;
     top: 2vh;
-    left: 6.8vh;
+    left: 3.9vh;
   }
+}
+
+@media (min-width: 1026px) and (max-width: 1365px) {
+  #logo {
+    height: 50vh;
+  }
+
+  #particles-container {
+    height: 130vh;
+  }
+
+  #First-title {
+    top: 4vh;
+  }
+
+  #Subtitle {
+    top: 0;
+  }
+
 }
 /*---------------------------------------------------------ABOUT------------------------------------------------------------------*/
 #bttbutton {
   display: none;
   position: fixed;
-  bottom: 2vw;
-  right: 2vw;
+  bottom: 3vh;
+  right: 3vh;
   z-index: 99;
   border: none;
   outline: none;
@@ -261,6 +281,7 @@ nav ul li a:hover {
   #about {
     display: flex;
     flex-direction: column;
+    margin-top: -30vh;
   }
 
   #about hr {
@@ -292,12 +313,18 @@ nav ul li a:hover {
   }
 }
 
+@media (min-width: 1026px) and (max-width: 1365px) {
+  #about {
+    margin-top: 10vh;
+  }
+}
+
 /*---------------------------------------------------------NOSSOS-CLIENTES------------------------------------------------------------------*/
 
 #clients {
   background: linear-gradient(100deg, #030130, #0c1f59, #030130);
+  display: block;
   height: 45vh;
-  width: 100vw;
 }
 
 #clients h4 {
@@ -340,6 +367,7 @@ nav ul li a:hover {
   #clients h4 {
     font-size: 5vh;
     margin-bottom: -3vh;
+    text-align: center;
   }
 
   .clients-images {
@@ -351,6 +379,12 @@ nav ul li a:hover {
   #clients-logo-section {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1365px) {
+  #clients {
+    height: 30vh;
   }
 }
 
@@ -437,6 +471,7 @@ body { font-family: sans-serif; }
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
   }
 
   .carousel-cell {
@@ -451,6 +486,7 @@ body { font-family: sans-serif; }
 
   .carousel-image {
     border-radius: 50vh;
+    height: 25vh
   }
 
   .portfolio-card-title {
@@ -459,6 +495,7 @@ body { font-family: sans-serif; }
 
   .portfolio-card-text {
     font-size: 3vh;
+    width: 80vw
   }
 
   .portfolio-card-button {
@@ -466,11 +503,17 @@ body { font-family: sans-serif; }
     padding: 1vh 2vh;
   }
 }
+
+@media (min-width: 1026px) and (max-width: 1365px) {
+  .carousel-image {
+  padding: 1vw;
+  }
+}
 /*---------------------------------------------------------MEMBROS------------------------------------------------------------------*/
 #particles-membros{ 
-  position: absolute; 
-  width: 120%; 
-  height: auto;
+  position: relative;
+  display: block;
+  height: 60vw;
   background: linear-gradient(100deg, #030130, #0c1f59, #030130);
   background-size: cover;
   background-position: 0% 0%;
@@ -805,7 +848,7 @@ body { font-family: sans-serif; }
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1025px) {  
   #servicos h2 {
     font-size: 7vh;
     margin-bottom: 0;
@@ -905,7 +948,7 @@ body { font-family: sans-serif; }
   
   #nossos-numeros h2 {
     font-size: 7vh;
-    margin-left: 10vw;
+    text-align: center;
   }
 
   #nossos-numeros-section {
@@ -920,6 +963,18 @@ body { font-family: sans-serif; }
   .nossos-numeros-text {
     font-size: 4.5vh;
     line-height: 1vh;
+  }
+
+  .nossos-numeros-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #nossos-numeros-icon2,
+  #nossos-numeros-icon3 {
+    margin: 0;
   }
 }
 
@@ -990,6 +1045,7 @@ body { font-family: sans-serif; }
   align-items: center;
 
   margin: 1.5vw 1vw 2vw .6vw;
+  flex-wrap: wrap;
 }
 
 .depoimentos-icone{
@@ -1016,7 +1072,7 @@ body { font-family: sans-serif; }
 
 @media (max-width: 1025px) {
   #depoimentos h2 {
-    font-size: 6vh;
+    font-size: 5vh;
   }
 
   #depoimentos-display {
@@ -1026,31 +1082,46 @@ body { font-family: sans-serif; }
   .depoimentos-balao {
     margin: 3vh 1vh;
     padding: 0;
+    width: 90vw;
   }
 
   .depoimentos-image {
     height: 15vh;
     position: relative;
-    top: -10vh;
-    left: -2.3vh;
+    top: -12vh;
+    left: -3vh;
   }
 
   .depoimentos-autor {
-    margin-top: -1vh;
-    font-size: 3vh;
+    font-size: 2.4vh;
+    font-weight: 600;
+    margin: 1vh;
   }
 
   .depoimentos-rating {
-    margin-top: 3vh;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .depoimentos-avaliacao {
+    font-size: 2.5vh;
   }
 
   .depoimentos-icone{
-    height: 10vh;
+    height: 2.5vh;
   }
 
   .depoimentos-content {
-    height: 30vh;
-    width: 70vw;
+    height: 35vh;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .depoimentos-text {
@@ -1061,10 +1132,43 @@ body { font-family: sans-serif; }
   }
 }
 
+@media (min-width: 270px) and (max-width: 290px) { /*GALAXY FOLD*/
+  .depoimentos-text {
+    margin-left: -32vw;
+  }
+
+  .depoimentos-avaliacao {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 530px) and (max-width: 550px) { /*SURFACE DUO*/
+  .depoimentos-text {
+    margin-left: -10vw;
+    margin-top: 1vh;
+    font-size: 2.5vh;
+  }
+
+  .depoimentos-autor {
+    font-size: 3vh;
+    margin-left: -1vh;
+  }
+}
+
 @media (min-width: 767px) and (max-width: 1025px) {
   .depoimentos-text {
     font-size: 2.5vh;
     margin-left: -6vh;
+  }
+
+  .depoimentos-image {
+    left: 2vh;
+  }
+}
+
+@media (min-width: 1026px) and (max-width: 1365px) {
+  .depoimentos-autor {
+    margin: -1vw;
   }
 }
 

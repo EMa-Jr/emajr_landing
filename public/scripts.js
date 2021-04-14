@@ -23,3 +23,9 @@ function backToTop() {
   document.body.scrollTop = 0; //para safari
   document.documentElement.scrollTop = 0;
 }
+
+
+
+
+
+

@@ -69,6 +69,23 @@ nav ul li a:hover {
   color: rgb(199, 199, 199);
 }
 
+.dropdown-menu {
+  background-color: #669aca;
+}
+
+.dropdown-item {
+  color: white;
+  padding: 1vh;
+}
+
+.dropdown-item:hover {
+  background: #669aca;
+  color: rgba(0,0,0,0.5);
+}
+
+.dropdown {
+  display: none;
+}
 
 .home {
   display: flex;
@@ -137,6 +154,10 @@ nav ul li a:hover {
 }
 
 @media (max-width: 1025px) {
+  nav ul {
+    margin-right: 9vh;
+  }
+  
   nav ul li a {
     margin: .5vh;
   }
@@ -168,6 +189,15 @@ nav ul li a:hover {
     top: 2vh;
     left: 3.9vh;
   }
+
+  .noDisplayOnMobile {
+    display: none;
+  }
+
+  .dropdown {
+    display: flex;
+  }
+
 }
 
 @media (min-width: 1026px) and (max-width: 1365px) {
@@ -441,7 +471,7 @@ nav ul li a:hover {
 body { font-family: sans-serif; }
 
 .carousel {
-  background: #e6e7e9;
+  background: rgba(0,0,0,0.0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -451,7 +481,7 @@ body { font-family: sans-serif; }
   width: 30%;
   height: 60vh;
   margin: 0 2vh;
-  background: #e6e7e9;
+  background: rgba(0,0,0,0.0);
   border-radius: 5px;
 }
 
@@ -501,6 +531,8 @@ body { font-family: sans-serif; }
   .portfolio-card-button {
     font-size: 3vh;
     padding: 1vh 2vh;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
   }
 }
 
@@ -586,6 +618,7 @@ body { font-family: sans-serif; }
     font-size: 5vh;
     position: relative;
     top: 9vh;
+    margin: 8vh;
   }
 
   .membros-cards {
@@ -594,8 +627,8 @@ body { font-family: sans-serif; }
   }
 
   #particles-membros {
-    height: 205vh;
-    margin-top: -197vh;
+    height: 210vh;
+    margin-top: -205vh;
   }
 
   .membros-card img {
@@ -635,11 +668,17 @@ body { font-family: sans-serif; }
   justify-content: center;
 }
 
+.error {
+  border: 1px solid #e74c3c;
+}
+.success {
+  border: 1px solid #2ecc71;
+}
+
 #contato-form input{
   border-radius: 6px;
   margin: 5px;
   padding: 3px 10px;
-  color: rgba(0,0,0,0.3);
   background-color: rgba(0,0,0,0.1);
   outline: none;
   font-size: 1.3vw;
@@ -660,7 +699,6 @@ body { font-family: sans-serif; }
   margin-left: 10px;
   border-radius: 6px;
   padding: 3px 10px;
-  color: rgba(0,0,0,0.3);
   background-color: rgba(0,0,0,0.1);
   outline: none;
   font-size: 1.3vw;
@@ -728,7 +766,7 @@ body { font-family: sans-serif; }
 
   #fcel {
     position: relative;
-    left: .8vh;
+    left: .7vh;
   }
 
   #contato-info {
@@ -754,6 +792,12 @@ body { font-family: sans-serif; }
     position: relative;
     top: 1vh;
     left: 2.5vh;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1025px) {
+  #fcel {
+    left: .4vh;
   }
 }
 

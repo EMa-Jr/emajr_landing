@@ -10,6 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/feather-icons"></script>
   <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
@@ -78,9 +83,6 @@
     <div class="container">
 
         <div class="row" data-aos="zoom-out">
-            <div class="col-lg-12 col-md-6">
-                <h2 class="text-left"><strong>NOSSOS SERVIÇOS</strong></h2>
-            </div>
         </div>
 
         <div class="row feature-section">
@@ -95,7 +97,7 @@
                                 data-bs-target="#process" type="button" role="tab" aria-controls="process"
                                 aria-selected="true">
                                 <i class="fas fa-route fa-sm"></i>
-                                Processos
+                                <i class="about-button-icon active" data-feather="book" color="black"></i>Missão
                             </button>
                         </li>
                         <li class="nav-item" role="presentation" data-aos="zoom-in" delay="100">
@@ -103,7 +105,7 @@
                                 data-bs-target="#strategy" type="button" role="tab" aria-controls="strategy"
                                 aria-selected="false">
                                 <i class="fas fa-cogs fa-sm"></i>
-                                Estratégia
+                                <i class="about-button-icon" data-feather="eye" color="black"></i>Visão
                             </button>
                         </li>
                         <li class="nav-item" role="presentation" data-aos="zoom-in">
@@ -111,7 +113,7 @@
                                 data-bs-target="#financial" type="button" role="tab" aria-controls="financial"
                                 aria-selected="true">
                                 <i class="fas fa-wallet fa-sm"></i>
-                                Financeiro
+                                <i class="about-button-icon" data-feather="award" color="black"></i>Valores
                             </button>
                         </li>
 
@@ -726,141 +728,38 @@
   </div>
 
 <!---------------------------------------------------------DEPOIMENTOS---------------------------------------------------------->
-
-  <div id="depoimentos">
-    <h2>DEPOIMENTOS</h2>
-    <div id="depoimentos-display">
-      <div class="depoimentos-balao">
-        <div>
-          <img class="depoimentos-image" src="../src/images/depoimentos-image.jpg" alt="depoimentos-image" />
+<!-- Slider main container -->
+<div class="swiper-container mySwiper">
+  <h2 id="depoimentos-title">DEPOIMENTOS</h2>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="depoimentos-header">
+        <div class="depoimentos-image">
+          <img src="../src/images/depoimentos-image.jpg" alt="depoimentos-image" >
         </div>
-        <div class="depoimentos-content">
-          <div>
-            <p class="depoimentos-autor">Natasha Caldeirão</p>
-            <div class="depoimentos-rating">
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-              <p class="depoimentos-avaliacao">Excelente</p>
-            </div>
-          </div>
-          <div>
-            <p class="depoimentos-text">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, necessitatibus sit suscipit esse obcaecati repellendus voluptas."</p>
-          </div>
+        <div class="depoimentos-header-text">
+          <strong>Karine Brito</strong>
+          <p>Engenheira Química</p>
         </div>
       </div>
-      <div class="depoimentos-balao">
-        <div>
-          <img class="depoimentos-image" src="../src/images/depoimentos-image.jpg" alt="depoimentos-image" />
-        </div>
-        <div class="depoimentos-content">
-          <div>
-            <p class="depoimentos-autor">Natasha Caldeirão</p>
-            <div class="depoimentos-rating">
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-              <p class="depoimentos-avaliacao">Excelente</p>
-            </div>
-          </div>
-          <div>
-            <p class="depoimentos-text">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, necessitatibus sit suscipit esse obcaecati repellendus voluptas."</p>
-          </div>
-        </div>
+      <div class="depoimentos-content">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima quos rerum assumenda quidem error, unde accusantium omnis, eum in labore est! Quis magni, dolor suscipit consequuntur eligendi, dicta sequi debitis tenetur labore quo ullam autem. Ex rerum dolores doloremque eius alias velit earum totam vitae aliquid rem sed exercitationem qui, blanditiis facilis saepe reiciendis at vel soluta eligendi voluptates. Dolores, nemo consequuntur neque pariatur at quia quibusdam ratione quo laboriosam mollitia natus corrupti! Non temporibus quis placeat nihil omnis laudantium harum laborum quod beatae odit tempore eos, autem repellendus corrupti dolor a ut odio praesentium earum ipsum, atque assumenda!
+        </p>
       </div>
-      <div class="depoimentos-balao">
-        <div>
-          <img class="depoimentos-image" src="../src/images/depoimentos-image.jpg" alt="depoimentos-image" />
-        </div>
-        <div class="depoimentos-content">
-          <div>
-            <p class="depoimentos-autor">Natasha Caldeirão</p>
-            <div class="depoimentos-rating">
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-              <p class="depoimentos-avaliacao">Excelente</p>
-            </div>
-          </div>
-          <div>
-            <p class="depoimentos-text">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, necessitatibus sit suscipit esse obcaecati repellendus voluptas."</p>
-          </div>
-        </div>
-      </div>
-      <div class="depoimentos-balao">
-        <div>
-          <img class="depoimentos-image" src="../src/images/depoimentos-image.jpg" alt="depoimentos-image" />
-        </div>
-        <div class="depoimentos-content">
-          <div>
-            <p class="depoimentos-autor">Natasha Caldeirão</p>
-            <div class="depoimentos-rating">
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-              <p class="depoimentos-avaliacao">Excelente</p>
-            </div>
-          </div>
-          <div>
-            <p class="depoimentos-text">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, necessitatibus sit suscipit esse obcaecati repellendus voluptas."</p>
-          </div>
-        </div>
-      </div>
-      <div class="depoimentos-balao">
-        <div>
-          <img class="depoimentos-image" src="../src/images/depoimentos-image.jpg" alt="depoimentos-image" />
-        </div>
-        <div class="depoimentos-content">
-          <div>
-            <p class="depoimentos-autor">Natasha Caldeirão</p>
-            <div class="depoimentos-rating">
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-              <p class="depoimentos-avaliacao">Excelente</p>
-            </div>
-          </div>
-          <div>
-            <p class="depoimentos-text">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, necessitatibus sit suscipit esse obcaecati repellendus voluptas."</p>
-          </div>
-        </div>
-      </div>
-      <div class="depoimentos-balao">
-        <div>
-          <img class="depoimentos-image" src="../src/images/depoimentos-image.jpg" alt="depoimentos-image" />
-        </div>
-        <div class="depoimentos-content">
-          <div>
-            <p class="depoimentos-autor">Natasha Caldeirão</p>
-            <div class="depoimentos-rating">
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-                <i class="depoimentos-icone" data-feather="star" color="white"></i>
-              <p class="depoimentos-avaliacao">Excelente</p>
-            </div>
-          </div>
-          <div>
-            <p class="depoimentos-text">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, necessitatibus sit suscipit esse obcaecati repellendus voluptas."</p>
-          </div>
-        </div>
-      </div>
-      
-      
-      
     </div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 4</div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+    <div class="swiper-slide">Slide 8</div>
+    <div class="swiper-slide">Slide 9</div>
   </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
 
 <!---------------------------------------------------------FOOTER-------------------------------------------------------------->
 

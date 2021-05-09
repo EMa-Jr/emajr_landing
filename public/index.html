@@ -57,20 +57,21 @@
     <img id="logo" src="../src/images/logo-ema.png" alt="logo" />
     <h1 id="First-title">EMa-Jr</h1>
     <h2 id="Subtitle">Engenharia de Materiais Júnior</h2>
+
   </div>
   <div id="particles-container"></div>
 
-<!---------------------------------------------------------SOBRE NÓS------------------------------------------------------------>
+<!---------------------------------------------------------SOBRE-NÓS--------------------------------------------------------->
 
   <button onclick="backToTop()" id="bttbutton" title="go to top"><i data-feather="arrow-up"></i></button>
   <div id="about">
 
     <div id="about1" >
       <hr>
-      <h2 class="titles">SOBRE NÓS</h2>
+      <h2 class="about-title">SOBRE NÓS</h2>
       <hr>
         <div>
-          <h3 class="about-title">Nossa história</h3>
+          <h3 class="about-section-title">Nossa história</h3>
           <p class="about-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab veritatis ipsam recusandae placeat ipsa omnis pariatur. Aspernatur est error a inventore temporibus, molestias ipsam fugit soluta quo laboriosam praesentium sunt ad debitis mollitia beatae nisi necessitatibus doloremque maiores veniam reprehenderit laborum dolor repudiandae. Saepe expedita eaque cupiditate obcaecati tenetur.</p>
         </div>
     </div>
@@ -140,7 +141,7 @@
                                 </p>
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-
+                              <img src="../src/images/mvv-missao.jpg" alt="mvv-missao">
                             </div>
                         </div>
                     </div>
@@ -162,7 +163,7 @@
                                 </p>
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-
+                              <img src="../src/images/mvv-visao.jpg" alt="mvv-visao">
                             </div>
                         </div>
                     </div>
@@ -179,7 +180,7 @@
                                 </p>
                             </div>
                             <div class="col-lg-6 order-1 order-lg-2 text-center">
-   
+                              <img src="../src/images/mvv-valores.jpg" alt="mvv-valores">
                             </div>
                         </div>
                     </div>
@@ -190,16 +191,27 @@
 
 </section>
 
-<!---------------------------------------------------------CLIENTES------------------------------------------------------------->
+<!---------------------------------------------------------CLIENTES---------------------------------------------------------->
 
   <div id="clients">
     <h4>NOSSOS CLIENTES</h4>
-    <div id="clients-logo-section">
-      <img class="clients-images clients-image-bigger" src="../src/images/logo-fiat.png" alt="logo-petrobras" />
-      <img class="clients-images" src="../src/images/logo-volkswagen.png" alt="logo-petrobras" />
-      <img class="clients-images" src="../src/images/logo-bmw.png" alt="logo-petrobras" />
-      <img class="clients-images clients-image-bigger" src="../src/images/logo-petrobras.png" alt="logo-petrobras" />
-      <img class="clients-images clients-image-renault" src="../src/images/logo-renault.png" alt="logo-petrobras" />
+    <div class="swiper-container swiper1">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide clientes-slide">
+            <img class="clients-images" src="../src/images/logo-volkswagen.png" alt="logo-volkswagen" />
+          </div>
+          <div class="swiper-slide clientes-slide">
+            <img class="clients-images " src="../src/images/logo-bmw.png" alt="logo-bmw" />
+          </div>
+          <div class="swiper-slide clientes-slide">
+            <img class="clients-images" src="../src/images/logo-petrobras.png" alt="logo-petrobras" />
+          </div>
+          <div class="swiper-slide clientes-slide">
+            <img class="clients-images" src="../src/images/logo-renault.png" alt="logo-renault" />
+          </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination swiper-pagination1"></div>
     </div>
   </div>
 
@@ -230,9 +242,9 @@
   </div>
 </div>
 
-<!---------------------------------------------------------MEMBROS-------------------------------------------------------------->
+<!---------------------------------------------------------MEMBROS----------------------------------------------------------->
 
-  <div id="membros">
+  <!--<div id="membros">
     <h2>MEMBROS</h2>
     <div class="membros-cards" data-ride="carousel">
       <div class="membros-carousel">
@@ -254,7 +266,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
+    </div>-->
     <!-- <div class="membros-cards" data-ride="carousel">
       <div class="membros-carousel">
         <img src="../src/images/membros-image.png" alt="membros-image" />
@@ -329,7 +341,6 @@
         </div>
       </div>  
     </div> -->
-  </div>
 
 <!---------------------------------------------------------CONTATO-------------------------------------------------------------->
 
@@ -729,10 +740,10 @@
 
 <!---------------------------------------------------------DEPOIMENTOS---------------------------------------------------------->
 <!-- Slider main container -->
+<h2 id="depoimentos-title">DEPOIMENTOS</h2>
 <div class="swiper-container mySwiper">
-  <h2 id="depoimentos-title">DEPOIMENTOS</h2>
   <div class="swiper-wrapper">
-    <div class="swiper-slide">
+    <div class="swiper-slide depoimentos-slide">
       <div class="depoimentos-header">
         <div class="depoimentos-image">
           <img src="../src/images/depoimentos-image.jpg" alt="depoimentos-image" >
@@ -747,14 +758,7 @@
         </p>
       </div>
     </div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    <div class="swiper-slide">Slide 4</div>
-    <div class="swiper-slide">Slide 5</div>
-    <div class="swiper-slide">Slide 6</div>
-    <div class="swiper-slide">Slide 7</div>
-    <div class="swiper-slide">Slide 8</div>
-    <div class="swiper-slide">Slide 9</div>
+    <!--COPIAR PARA QUANTOS SLIDER QUISER-->
   </div>
   <div class="swiper-button-next"></div>
   <div class="swiper-button-prev"></div>
@@ -806,6 +810,13 @@
   <script src="scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   <script>feather.replace()</script>
+
+  <script>
+    var swiper1 = new Swiper('.swiper1', {
+        slidesPerView: 3,
+        spaceBetween: 0,
+    });
+  </script>
 
 </body>
 </html>

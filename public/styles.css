@@ -403,7 +403,6 @@ nav ul li a:hover {
 
 #clients {
   display: block;
-  height: auto;
 }
 
 #clients h4 {
@@ -418,8 +417,12 @@ nav ul li a:hover {
   padding-top: 2vw;
 }
 
-.swiper-wrapper .clientes-slide {
+.swiper-wrapper .clients-slide {
   background: #e6e7e9;
+}
+
+.swiper-wrapper .clients-slide img {
+  height: 200px;
 }
 
 .clients-images {
@@ -451,9 +454,7 @@ nav ul li a:hover {
 }
 
 /*---------------------------------------------------------PORTFÓLIO------------------------------------------------------------------*/
-#portfolio{
-  margin: 10vh 5vw 20vh 5vw;
-}
+
 
 .portfolio-card-title {
   font-size: 25px;
@@ -471,37 +472,6 @@ nav ul li a:hover {
   text-align: justify;
 }
 
-.portfolio-card-date {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.portfolio-card-button {
-  border-radius: 15px 15px 5px 5px;
-  color: white;
-  font-weight: 500;
-  font-size: 15px;
-
-  background-color: #030130;
-  padding: 2px 10px;
-  margin-top: 0;
-}
-
-.carousel-cell button a {
-  text-decoration: none;
-  color: white;
-}
-
-.portfolio-card-button-div {
-  display: flex;
-  justify-content: flex-start;
-}
-
-/* external css: flickity.css */
-
-
-body { font-family: sans-serif; }
-
 .carousel {
   background: rgba(0,0,0,0.0);
   display: flex;
@@ -515,6 +485,7 @@ body { font-family: sans-serif; }
   margin: 0 2vh;
   background: rgba(0,0,0,0.0);
   border-radius: 5px;
+
 }
 
 .carousel-image {
@@ -1033,12 +1004,13 @@ body { font-family: sans-serif; }
 
 .nossos-numeros-card p {
   margin: 0;
-  color: #123b77;
+
 }
 
 .nossos-numeros-title { 
   font-weight: 800;
   font-size: 40px;
+  color: #6699cc;
 }
 
 .nossos-numeros-text {
@@ -1047,7 +1019,9 @@ body { font-family: sans-serif; }
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #123b77;
   line-height: 0;
+
 }
 
 @media (max-width: 1025px) {
@@ -1126,10 +1100,10 @@ body {
   font-weight: 800;
 }
 .depoimentos-header-text p {
-  font-weight: 100;
+  font-weight: 300;
 }
 
-.swiper-slide .depoimentos-header .depoimentos-image img {
+.depoimentos-slide .depoimentos-header .depoimentos-image img {
   position: relative;
   height: 100px;
   width: 100px;
@@ -1141,12 +1115,8 @@ body {
 }
 
 .swiper-wrapper .depoimentos-slide {
-  height: 70%;
-
   background: #e6e7e9;
-}
 
-.depoimentos-slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1154,7 +1124,7 @@ body {
 
 }
 
-div.depoimentos-content {
+.depoimentos-content {
   text-align: justify;
   border-radius: 10px;
 
@@ -1208,45 +1178,6 @@ div.depoimentos-content {
     font-size: 5vh;
   }
 
-  #depoimentos-display {
-    display: flex;
-    flex-direction: column;
-  }
-  .depoimentos-balao {
-    margin: 3vh 1vh;
-    padding: 0;
-    width: 90vw;
-  }
-
-  .depoimentos-image {
-    height: 15vh;
-    position: relative;
-    top: -12vh;
-    left: -3vh;
-  }
-
-  .depoimentos-autor {
-    font-size: 2.4vh;
-    font-weight: 600;
-    margin: 1vh;
-  }
-
-  .depoimentos-rating {
-    margin-bottom: 1vh;
-    margin-top: 1vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .depoimentos-avaliacao {
-    font-size: 2.5vh;
-  }
-
-  .depoimentos-icone{
-    height: 2.5vh;
-  }
-
   .depoimentos-content {
     height: 35vh;
     width: 80%;
@@ -1274,6 +1205,8 @@ footer {
 
   text-align: center;
   background-color: #1a1a1a;
+
+  margin-top: 50px;
 }
 
 .footer-footer {
@@ -1283,10 +1216,13 @@ footer {
 }
 
 .footer-column {
-  margin: 0 3vw;
+  margin: 0 2vw;
   width: auto;
-  width: 250px;
   flex-wrap: wrap;
+}
+
+.footer-icon {
+  margin: 5px;
 }
 
 .footer-column p {

@@ -194,7 +194,19 @@
 
   <div id="clients">
     <h4>NOSSOS CLIENTES</h4>
+    <!-- Swiper -->
+  <div class="swiper-container swiper1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide clients-slide"><img src="../src/images/clients-bmw.png" alt="clients-logo"></div>
+      <div class="swiper-slide clients-slide"><img src="../src/images/clients-fiat.png" alt="clients-logo"></div>
+      <div class="swiper-slide clients-slide"><img src="../src/images/clients-petrobras.png" alt="clients-logo"></div>
+      <div class="swiper-slide clients-slide"><img src="../src/images/clients-volkswagen.jpg" alt="clients-logo"></div>
+      <div class="swiper-slide clients-slide"><img src="../src/images/clients-renault.png" alt="clients-logo"></div>
+    </div>
+  </div>
 
+  <!-- Swiper JS -->
+  <script src="../package/swiper-bundle.min.js"></script>
     
     
   </div>
@@ -209,19 +221,16 @@
       <img class="carousel-image" src="../src/images/portfolio-ceramica.jpg" alt="carousel-image" />
       <p class="portfolio-card-title">Cerâmicas</p>
       <p class="portfolio-card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo corporis nulla quas similique laborum beatae iste aut accusamus dolorum aliquam.</p>
-      <button class="portfolio-card-button"><a href="#servicos-ceramicos">Ver mais</a></button>
     </div>
     <div class="carousel-cell">
       <img class="carousel-image" src="../src/images/portfolio-polimeros.jpg" alt="carousel-image" />
       <p class="portfolio-card-title">Polímeros</p>
       <p class="portfolio-card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo corporis nulla quas similique laborum beatae iste aut accusamus dolorum aliquam.</p>
-      <button class="portfolio-card-button"><a href="#servicos-polimericos">Ver mais</a></button>
     </div>
     <div class="carousel-cell">
       <img class="carousel-image" src="../src/images/portfolio-metais.jpg" alt="carousel-image" />
       <p class="portfolio-card-title">Metais</p>
       <p class="portfolio-card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo corporis nulla quas similique laborum beatae iste aut accusamus dolorum aliquam.</p>
-      <button class="portfolio-card-button"><a href="#servicos-metalicos">Ver mais</a></button>
     </div>
   </div>
 </div>
@@ -705,22 +714,22 @@
     <h2 class="titles">NOSSOS NÚMEROS</h2>
     <div id="nossos-numeros-section">
       <div class="nossos-numeros-card">
-        <i class="nossos-numeros-icon" data-feather="clock" color="#6699cc"></i>
+        <i class="nossos-numeros-icon" data-feather="clock" color="#030130"></i>
         <p class="nossos-numeros-title">5 ANOS</p>
         <p class="nossos-numeros-text">de empresa</p>
       </div>
       <div class="nossos-numeros-card">
-        <i class="nossos-numeros-icon" data-feather="users" color="#6699cc"></i>
+        <i class="nossos-numeros-icon" data-feather="users" color="#030130"></i>
         <p class="nossos-numeros-title">30 CLIENTES</p>
         <p class="nossos-numeros-text">satisfeitos</p>
       </div>
       <div class="nossos-numeros-card">
-        <i class="nossos-numeros-icon" data-feather="clipboard" color="#6699cc"></i>
+        <i class="nossos-numeros-icon" data-feather="clipboard" color="#030130"></i>
         <p class="nossos-numeros-title">856 PROJETOS</p>
         <p class="nossos-numeros-text">realizados</p>
       </div>
       <div class="nossos-numeros-card">
-        <i class="nossos-numeros-icon" data-feather="smile" color="#6699cc"></i>
+        <i class="nossos-numeros-icon" data-feather="smile" color="#030130"></i>
         <p class="nossos-numeros-title">100</p>
         <p class="nossos-numeros-text">NPS</p>
       </div>
@@ -743,8 +752,11 @@
         </div>
       </div>
       <div class="depoimentos-content">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima quos rerum assumenda quidem error, unde accusantium omnis, eum in labore est! Quis magni, dolor suscipit consequuntur eligendi, dicta sequi debitis tenetur labore quo ullam autem. Ex rerum dolores doloremque eius alias velit earum totam vitae aliquid rem sed exercitationem qui, blanditiis facilis saepe reiciendis at vel soluta eligendi voluptates. Dolores, nemo consequuntur neque pariatur at quia quibusdam ratione quo laboriosam mollitia natus corrupti! Non temporibus quis placeat nihil omnis laudantium harum laborum quod beatae odit tempore eos, autem repellendus corrupti dolor a ut odio praesentium earum ipsum, atque assumenda!
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima quos rerum assumenda quidem error, unde accusantium omnis, eum in labore est! Quis magni, dolor suscipit consequuntur eligendi, dicta sequi debitis tenetur 
         </p>
+        <p>labore quo ullam autem. Ex rerum dolores doloremque eius alias velit earum totam vitae aliquid rem sed exercitationem qui, blanditiis facilis saepe reiciendis at vel soluta eligendi voluptates. Dolores, nemo consequuntur neque pariatur at quia quibusdam ratione quo laboriosam mollitia natus corrupti! Non temporibus quis placeat nihil  
+        </p>
+        <p>omnis laudantium harum laborum quod beatae odit tempore eos, autem repellendus corrupti dolor a ut odio praesentium earum ipsum, atque assumenda!</p>
       </div>
     </div>
     <!--COPIAR PARA QUANTOS SLIDER QUISER-->
@@ -758,7 +770,9 @@
 
   <footer>
     <div class="footer-footer">
-      <img src="../src/images/Logo-ema.png" alt="EMa-Jr">
+      <div class="footer-column">
+        <img src="../src/images/Logo-ema.png" alt="EMa-Jr">
+      </div>
       <div class="footer-column">
         <strong>MAPA DO SITE</strong>
         <p><a href="#navbar">Início</a></p>
@@ -777,11 +791,11 @@
       </div>
       <div class="footer-column">
         <strong>CONTATO</strong>
-        <p><a target="_blank" href="#"><i class="depoimentos-icone" data-feather="mail" color="white"></i>contato@emajunor.com</a></p>
-        <p><a target="_blank" href="#"><i class="depoimentos-icone" data-feather="phone" color="white"></i>(42) 99999-9999</a></p>
-        <p><a target="_blank" href="https://www.facebook.com/ema.junior/"><i class="depoimentos-icone" data-feather="facebook" color="white"></i>@ema.junior</a></p>
-        <p><a target="_blank" href="https://www.instagram.com/ema.junior/?hl=pt-br"><i class="depoimentos-icone" data-feather="instagram" color="white"></i>@ema.junior</a></p>
-        <p><a target="_blank" href="https://www.linkedin.com/company/ema-jr/"><i class="depoimentos-icone" data-feather="linkedin" color="white"></i>EMa-Jr - Mechanical or Industrial Engineering</a></p>
+        <p><a target="_blank" href="#"><i class="footer-icon" data-feather="mail" color="white"></i>contato@emajunor.com</a></p>
+        <p><a target="_blank" href="#"><i class="footer-icon" data-feather="phone" color="white"></i>(42) 99999-9999</a></p>
+        <p><a target="_blank" href="https://www.facebook.com/ema.junior/"><i class="footer-icon" data-feather="facebook" color="white"></i>@ema.junior</a></p>
+        <p><a target="_blank" href="https://www.instagram.com/ema.junior/?hl=pt-br"><i class="footer-icon" data-feather="instagram" color="white"></i>@ema.junior</a></p>
+        <p><a target="_blank" href="https://www.linkedin.com/company/ema-jr/"><i class="footer-icon" data-feather="linkedin" color="white"></i>EMa-Jr - Mechanical or Industrial Engineering</a></p>
       </div>
     </div>
     <div id="footer-e2c">
@@ -802,8 +816,20 @@
 
   <script>
     var swiper1 = new Swiper('.swiper1', {
-        slidesPerView: 3,
-        spaceBetween: 0,
+      slidesPerView: 3,
+      spaceBetween: 0,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+        
     });
   </script>
 

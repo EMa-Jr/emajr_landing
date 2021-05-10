@@ -2,6 +2,7 @@ particlesJS.load('particles-container', 'particlesjs-config.json');
 particlesJS.load('particles-membros', 'particlesjs-config.json');
 particlesJS.load('particles-servicos', 'particlesjs-config.json');
 
+
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',

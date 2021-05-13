@@ -13,8 +13,8 @@ html, body {
   overflow-x: hidden;
 }
 html {
-  height: 100%;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -23,7 +23,9 @@ body {
   max-width: 100%;
 
   font: 20px "Poppins", cursive;
-  background: url(../src/images/background.png);
+  background-image: url(../src/images/background.jpg);
+  background-size: cover;
+
 }
 
 canvas{ 
@@ -68,7 +70,7 @@ nav ul li {
 nav ul li a {
   margin: 1vw;
   font-size: 2.5vh;
-  color: #669aca;
+  color: white;
   text-decoration: none;
   transition: 0.2s;
 
@@ -579,6 +581,7 @@ nav ul li a:hover {
   background: rgba(255, 255, 255, 0.2);
 
   border: 1px solid #6699cc;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
 }
 
 .membros-content {
@@ -608,6 +611,28 @@ nav ul li a:hover {
   line-height: 0;
 }
 
+.membros-linkedin {
+  background: none;
+  width: 100%;
+  padding: 3px 0;
+
+  transition: transform .2s;
+}
+.membros-linkedin a {
+  text-decoration: none;
+  color: #6699cc;
+  transition: color .2s;
+}
+
+.membros-linkedin:hover{
+  transform: scale(1.1);
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.membros-linkedin a:hover {
+  color: #123b77;
+}
+
 
 
 @media (max-width: 1025px) {
@@ -635,14 +660,7 @@ nav ul li a:hover {
   .membros-card img {
     height: 20vh;
   }
-
-  .membros-text {
-    padding: 2vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+}
 
   .membros-text p:first-child {
     font-size: 3vh;

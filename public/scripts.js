@@ -49,7 +49,19 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
+navbar = document.getElementById("desktop-navbar");
+window.onscroll = function() {
+  navbarFunction()
+};
 
+function navbarFunction() {
+  if(document.body.scrollTop > window.innerHeight
+    || document.documentElement.scrollTop > window.innerHeight) {
+      navbar.style.background = "#123b77";
+    } else {
+      navbar.style.background = "rgba(255, 255, 255, 0.1)";
+    }
+}
 
 
 

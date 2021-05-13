@@ -23,7 +23,7 @@ body {
   max-width: 100%;
 
   font: 20px "Poppins", cursive;
-  background: #e6e7e9;
+  background: url(../src/images/background.png);
 }
 
 canvas{ 
@@ -344,12 +344,6 @@ nav ul li a:hover {
   }
 }
 
-@media (min-width: 1026px) and (max-width: 1365px) {
-  #about {
-    margin-top: 10vh;
-  }
-}
-
 .mvv-content {
   margin-top: 20px;
 }
@@ -415,46 +409,34 @@ nav ul li a:hover {
   justify-content: center;
   padding: 1vw;
   padding-top: 2vw;
+  margin-bottom: 50px;
 }
-
-.swiper-wrapper .clients-slide {
-  background: #e6e7e9;
-}
-
 .swiper-wrapper .clients-slide img {
   height: 200px;
 }
 
-.clients-images {
-  height: 100px;
-}
 
 @media (max-width: 1025px) {
-  #clients {
-    height: auto;
-  }
-  
   #clients h4 {
     font-size: 5vh;
     margin-bottom: -3vh;
     text-align: center;
   }
-
-  .clients-images {
-    height: 20vh;
-    margin-bottom: 3vh;
-    margin-top: 3vh;
-  }
 }
 
-@media (min-width: 1026px) and (max-width: 1365px) {
-  #clients {
-    height: 30vh;
+@media (min-width: 359px) and (max-width: 640px) {
+  .swiper-wrapper .clients-slide img {
+    height: 150px;
+  }
+  .swiper-wrapper .clients-slide {
+    height: 200px;
   }
 }
 
 /*---------------------------------------------------------PORTFÓLIO------------------------------------------------------------------*/
-
+#portfolio h2 {
+  margin: 50px;
+}
 
 .portfolio-card-title {
   font-size: 25px;
@@ -546,77 +528,63 @@ nav ul li a:hover {
 }
 /*---------------------------------------------------------MEMBROS------------------------------------------------------------------*/
 
+.swiper-slide {
+  background: none;
+}
+
 #membros {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: -5vw;
+
+  background: none;
 }
 
-#membros h2 {
+.membros-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.membros-title {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.membros-content {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  color: white;
-  font: 4vw Poppins;
-  font-weight: 700;
-  margin: 50px;
+  flex-wrap: wrap;
 }
 
-.membros-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.membros-content img {
+  height: 200px;
+  margin: 20px;
+}
 
+.membros-diretoria {
+  display: flex;
   align-items: center;
   justify-content: center;
-}
+  flex-wrap: wrap;
 
-.membros-card {
-  display: flex;
-  margin-bottom: 3vw;
-  margin: 1vw;
-
-}
-.membros-card p {
-  color: white;
-  margin: 0;
-  text-align: justify;
-}
-.membros-card p:first-child {
-  font-size: 2vw;
-  font-weight: 600;
-}
-.membros-card p:last-child {
-  font-weight: 200;
-  font-size: 1vw;
+  width: 60%;
 }
 
 .membros-text {
-  padding: 2vw;
+  text-align: left;
+  line-height: 0;
 }
-.membros-card img {
-  height: 12vw;
-  margin: 1vw;
-  margin: 0;
-}
-/* .membros-text a i {
-  display: flex;
-  flex-direction: column;
-  height: 30px;
-  margin-bottom: 30px;
-  margin-top: 10px;
-} */
 
-/* .social-membros a i {
-  display: flex;
-  flex-direction: column;
-  height: 30px;
-  margin-bottom: 30px;
-  margin-top: 20px;
-  padding-top: 10px;
-} */
+
 
 @media (max-width: 1025px) {
   #membros {
@@ -1075,7 +1043,6 @@ body {
   font-weight: 800;
   font-size: 60px;
   color: #123b77;
-  background-color: #e6e7e9;
 
   display: flex;
   align-items: center;
@@ -1115,7 +1082,6 @@ body {
 }
 
 .swiper-wrapper .depoimentos-slide {
-  background: #e6e7e9;
 
   display: flex;
   flex-direction: column;
@@ -1143,7 +1109,6 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
 
   /* Center slide text vertically */
   display: -webkit-box;

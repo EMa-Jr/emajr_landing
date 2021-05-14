@@ -669,7 +669,6 @@ nav ul li a:hover {
   .membros-text p:last-child {
     font-size: 2vh;
   }
-}
 
 /*---------------------------------------------------------CONTATO------------------------------------------------------------------*/
 #contato {
@@ -1247,11 +1246,15 @@ footer p a {
   font-weight: 200;
 
   text-decoration: none;
+  transition: transform .2s;
 
 }
 
 footer p a:hover {
   color: #ebebebda;
+}
+.footer-column p:hover {
+  transform: scale(1.1);
 }
 
 footer strong {

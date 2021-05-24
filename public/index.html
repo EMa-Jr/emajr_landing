@@ -54,13 +54,16 @@
 <!---------------------------------------------------------HOME-------------------------------------------------------------->
 
   <div class="home">
-    <img id="logo" src="../src/images/logo-ema.png" alt="logo" />
+    <img id="logo" src="../src/images/Logo-ema.png" alt="logo" />
     <h1 id="First-title">EMa-Jr</h1>
     <h2 id="Subtitle">Engenharia de Materiais Júnior</h2>
 
   </div>
 
-  <video src="../src/images/header-video.mp4" autoplay="autoplay" loop id="header-video"></video>
+  <video src="../src/images/header-video4.mp4" autoplay muted loop id="header-video"></video>
+  <script>
+    document.getElementById('header-video').play();
+  </script>
 
   <!--<div id="particles-container"></div>-->
 
@@ -240,58 +243,54 @@
     <div class="swiper-container swiper2">
       <div class="swiper-wrapper">
         <div class="swiper-slide membros-slide">
-          <div class="membros-title">
-            <h3>DIRETORIA DE MARKETING</h3>
-          </div>
-          <div class="membros-diretoria">
-            <div class="membros-card">
-              <div class="membros-content">
-                <img src="../src/images/membros-image.png" alt="membros-image">
-                <div class="membros-text">
-                  <p>Joao da Silva</p>
-                  <button class="membros-linkedin" type="button"><a href="#" alt="membros-linkedin"><i data-feather="linkedin"></i></a></button>
-                </div>
+          <div class="membros-card">
+            <div class="membros-content">
+              <img src="../src/images/membros-1.jpg" alt="membros-image">
+              <div class="membros-text">
+                <strong>Joao da Silva</strong>
+                <p>Diretoria de Vendas</p>
+                <button class="membros-linkedin" type="button"><a href="#" alt="membros-linkedin"><i class="membros-linkedin-icon" data-feather="linkedin"></i></a></button>
               </div>
             </div>
-            <div class="membros-card">
-              <div class="membros-content">
-                <img src="../src/images/membros-image.png" alt="membros-image">
-                <div class="membros-text">
-                  <p>Joao da Silva</p>
-                  <button class="membros-linkedin" type="button"><a href="#" alt="membros-linkedin"><i data-feather="linkedin"></i></a></button>
-                </div>
-              </div>
-            </div>
-            <div class="membros-card">
-              <div class="membros-content">
-                <img src="../src/images/membros-image.png" alt="membros-image">
-                <div class="membros-text">
-                  <p>Joao da Silva</p>
-                  <button class="membros-linkedin" type="button"><a href="#" alt="membros-linkedin"><i data-feather="linkedin"></i></a></button>
-                </div>
-              </div>
-            </div>
-            <div class="membros-card">
-              <div class="membros-content">
-                <img src="../src/images/membros-image.png" alt="membros-image">
-                <div class="membros-text">
-                  <p>Joao da Silva</p>
-                  <button class="membros-linkedin" type="button"><a href="#" alt="membros-linkedin"><i data-feather="linkedin"></i></a></button>
-                </div>
-              </div>
-            </div>
-            <div class="membros-card">
-              <div class="membros-content">
-                <img src="../src/images/membros-image.png" alt="membros-image">
-                <div class="membros-text">
-                  <p>Joao da Silva</p>
-                  <button class="membros-linkedin" type="button"><a href="#" alt="membros-linkedin"><i data-feather="linkedin"></i></a></button>
-                </div>
-              </div>
-            </div>
-            
-          </div>
+          </div>           
         </div>
+        <div class="swiper-slide membros-slide">
+          <div class="membros-card">
+            <div class="membros-content">
+              <img src="../src/images/membros-2.jpg" alt="membros-image">
+              <div class="membros-text">
+                <strong>Marcelo Canteri</strong>
+                <p>Colaborador</p>
+                <button class="membros-linkedin" type="button"><a href="#" alt="membros-linkedin"><i class="membros-linkedin-icon" data-feather="linkedin"></i></a></button>
+              </div>
+            </div>
+          </div>           
+        </div>
+        <div class="swiper-slide membros-slide">
+          <div class="membros-card">
+            <div class="membros-content">
+              <img src="../src/images/membros-3.jpg" alt="membros-image">
+              <div class="membros-text">
+                <strong>Natalia Almeida</strong>
+                <p>Diretoria de Projetos</p>
+                <button class="membros-linkedin" type="button"><a href="#" alt="membros-linkedin"><i class="membros-linkedin-icon" data-feather="linkedin"></i></a></button>
+              </div>
+            </div>
+          </div>           
+        </div>
+        <div class="swiper-slide membros-slide">
+          <div class="membros-card">
+            <div class="membros-content">
+              <img src="../src/images/membros-4.jpg" alt="membros-image">
+              <div class="membros-text">
+                <strong>Flávia Andrade</strong>
+                <p>Diretoria de Marketing</p>
+                <button class="membros-linkedin" type="button"><a href="#" alt="membros-linkedin"><i class="membros-linkedin-icon" data-feather="linkedin"></i></a></button>
+              </div>
+            </div>
+          </div>           
+        </div>
+        
 
       </div>
 
@@ -798,8 +797,14 @@
         disableOnInteraction: false,
       },
       breakpoints: {
+        280: {
+          slidesPerView: 1,
+        },
         360: {
           slidesPerView: 2,
+        },
+        1023: {
+          sliderPerView: 3,
         },
         1366: {
           sliderPerView: 3,
@@ -809,15 +814,26 @@
     });
 
     var swiper2 = new Swiper('.swiper2', {
-      slidesPerView: 1,
-      spaceBetween: 30,
+      slidesPerView: 4,
+      spaceBetween: 0,
       slidesPerGroup: 1,
       loop: true,
       loopFillGroupWithBlank: true,
       navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
-        },        
+        },
+      breakpoints: {
+        1366: {
+          slidesPerView: 3
+        },
+        1920: {
+          sliderPerView: 4
+        },
+        280: {
+          slidesPerView: 1
+        },
+      }    
     });
   </script>
 

@@ -109,6 +109,10 @@ nav ul li a:hover {
 
 }
 
+.home h1, .home h2 {
+  color: white;
+}
+
 #logo {
   height: 80vh;
   position: relative;
@@ -118,13 +122,13 @@ nav ul li a:hover {
 
   z-index: 1;
 
+  opacity: 80%;
 }
 
 #First-title{
   position: relative;
   top: -7vw;
   /* left: 24vw; */
-  color: white;
   font-family: Poppins;
   font-weight: 700;
   font-size: 10vw;
@@ -136,7 +140,6 @@ nav ul li a:hover {
   font: 1.8vw Poppins, sans-serif;
   font-weight: 300;
   padding-left: 1vw;
-  color: white;
   letter-spacing: .3vw;
   position: relative;
   top: -10vw;
@@ -162,7 +165,7 @@ nav ul li a:hover {
   width: 100%;
   z-index: -5;
 
-  border-radius: 0 0 50% 50%;
+  border-radius: 0 0 0% 0%;
 }
 
 @media (max-width: 1025px) {
@@ -337,13 +340,26 @@ nav ul li a:hover {
     font-size: 2.75vh;
   }
 
-  #about-image1 {
-    height: 100%;
-    width: 40vh;
-    margin-top: -2vh;
+  .col-lg-6 p {
+    width: 70vw;
+    margin-right: 0 !important;
+    text-align: justify;
   }
-  #about-image2 {
-    display: none;
+
+  .col-lg-6 img {
+    height: 200px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+
+    padding: 10px !important;
+  }
+
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    margin: 10px;
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -418,12 +434,17 @@ nav ul li a:hover {
   height: 200px;
 }
 
-
 @media (max-width: 1025px) {
   #clients h4 {
-    font-size: 5vh;
-    margin-bottom: -3vh;
+    font-size: 7vh;
+    margin-bottom: 3vh;
     text-align: center;
+
+    line-height: 50px;
+  }
+
+  .swiper1 .swiper-wrapper {
+    margin-bottom: 5vh;
   }
 }
 
@@ -479,7 +500,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 1025px) {
-  #portfolio h1 {
+  #portfolio h2 {
     font-size: 7vh;
     margin-top: -3vh;
   }
@@ -493,7 +514,7 @@ nav ul li a:hover {
   }
 
   .carousel-cell {
-    margin: 2vh 3vh 8vh 0;
+    margin: 5vh 3vh 13vh 0;
     width: 50vh;
 
     display: flex;
@@ -509,11 +530,12 @@ nav ul li a:hover {
 
   .portfolio-card-title {
     font-size: 5vh;
+    text-align: center;
   }
 
   .portfolio-card-text {
     font-size: 3vh;
-    width: 80vw
+    width: 80vw;
   }
 
   .portfolio-card-button {
@@ -554,6 +576,8 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
 
+  width: 80%;
+
 
 }
 
@@ -584,22 +608,18 @@ nav ul li a:hover {
 }
 
 .membros-content img {
-  height: 200px;
+  height: 150px;
   margin: 20px;
-}
-
-.membros-diretoria {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  width: 90%;
+  border-radius: 50%;
 }
 
 .membros-text {
   text-align: left;
+  line-height: 35px;
+}
+.membros-text p {
   line-height: 0;
+  font-weight: 300;
 }
 
 .membros-linkedin {
@@ -625,22 +645,16 @@ nav ul li a:hover {
 }
 
 
-
 @media (max-width: 1025px) {
   #membros {
-    margin-top: -30vh;
+    margin-top: -15vh;
   }
 
   #membros h2 {
-    font-size: 5vh;
+    font-size: 7vh;
     position: relative;
     top: 9vh;
     margin: 8vh;
-  }
-
-  .membros-cards {
-    display: flex;
-    flex-direction: column;
   }
 
   #particles-membros {
@@ -651,15 +665,40 @@ nav ul li a:hover {
   .membros-card img {
     height: 20vh;
   }
+
+  .membros-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .membros-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-  .membros-text p:first-child {
+@media (min-width: 767px) and (max-width: 1025px) {
+  .membros-text strong {
     font-size: 3vh;
   }
-
-  .membros-text p:last-child {
-    font-size: 2vh;
+  .membros-text p {
+  font-size: 2.5vh;
+  line-height: 30px;
   }
+
+  .membros-linkedin {
+    height: 5vh;
+  }
+
+  .membros-linkedin-icon {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+
 
 /*---------------------------------------------------------CONTATO------------------------------------------------------------------*/
 #contato {
@@ -801,7 +840,6 @@ nav ul li a:hover {
 
   #fcel {
     position: relative;
-    left: .7vh;
   }
 
   #contato-info {
@@ -821,20 +859,32 @@ nav ul li a:hover {
     margin: .5vh;
     height: 5vh;
   }
+}
 
+@media (max-width: 1023px) {
   #fbutton {
-    font-size: 3.5vh;
+    font-size: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  #fbutton {
+    font-size: 3vh;
     position: relative;
     top: 1vh;
     left: 2.5vh;
+    width: 250px;
+  }
+
+  #contato-button-icon {
+    width: 40px;
+    height: 40px;
   }
 }
 
-@media (min-width: 1023px) and (max-width: 1025px) {
-  #fcel {
-    left: .4vh;
-  }
-}
+
 
 /*---------------------------------------------------------SERVIÇOS------------------------------------------------------------------*/
 /*#servicos {
@@ -1011,6 +1061,8 @@ nav ul li a:hover {
   font-weight: 800;
   font-size: 40px;
   color: #6699cc;
+
+  flex-wrap: wrap;
 }
 
 .nossos-numeros-text {
@@ -1022,6 +1074,12 @@ nav ul li a:hover {
   color: #123b77;
   line-height: 0;
 
+}
+
+@media (max-width: 281px) {
+  .nossos-numeros-title {
+    font-size: 4.1vh !important;
+  }
 }
 
 @media (max-width: 1025px) {
@@ -1170,25 +1228,34 @@ body {
 
 
 @media (max-width: 1025px) {
-  #depoimentos h2 {
-    font-size: 5vh;
+  #depoimentos-title {
+    font-size: 5.5vh;
   }
 
   .depoimentos-content {
-    height: 35vh;
-    width: 80%;
+    padding: 20px;
+    width: 70vw;
+  }
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+@media (min-width: 767px) and (max-width: 1025px) {
+  .depoimentos-content p {
+    font-size: 3vh;
+  }
+  .depoimentos-content {
+    padding: 50px;
   }
 
-  .depoimentos-text {
-    width: 65vw;
-    margin-top: -3.5vh;
-    margin-left: -25vw;
-    font-size: 2vh;
+  .depoimentos-slide .depoimentos-header .depoimentos-image img {
+    height: 15vh;
+    width: 15vh;
+  }
+
+  .depoimentos-header-text strong {
+    font-size: 3vh;
+  }
+  .depoimentos-header-text p {
+    font-size: 2.5vh;
   }
 }
 
@@ -1265,3 +1332,16 @@ footer img {
 #footer-e2c p {
   margin-top: 10px;
 }
+
+@media(max-width: 541px) {
+  .footer-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-column strong {
+    display: flex;
+    justify-content: right;
+    margin: 10px auto;
+  }
+}
+

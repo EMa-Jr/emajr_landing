@@ -396,6 +396,35 @@ nav ul li a:hover {
   color: #152e54;
 }
 
+@media (min-width: 539px) and (max-width: 541px) {
+  .mvv-text {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 769px) {
+  .mvv-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 40px;
+    font-size: 2.75vh;
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .mvv-image-section img {
+    height: 200px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px !important;
+  }
+}
+
 @media (max-width: 1025px) {
   #about {
     display: flex;
@@ -427,16 +456,6 @@ nav ul li a:hover {
     text-align: justify;
   }
 
-  .col-lg-6 img {
-    height: 200px !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: -20px;
-
-    padding: 10px !important;
-  }
-
   .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
     margin: 10px;
     width: 120px;
@@ -451,6 +470,47 @@ nav ul li a:hover {
   .about-section-title {
     font-size: 4vh;
   }
+
+  #services {
+    width: 80vw;
+  }
+
+  .mvv-image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90vw;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1025px) {
+  .mvv-section {
+    font-size: 2.75vh;
+    margin-left: 70px;
+
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .mvv-image-section img {
+    height: 500px;
+    margin: 20px;
+  }
+
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    margin-left: 110px;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
 .mvv-content {

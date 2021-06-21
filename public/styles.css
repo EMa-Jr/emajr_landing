@@ -1178,7 +1178,7 @@ nav ul li a:hover {
 #nossos-numeros-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 #nossos-numeros-section div {
@@ -1225,6 +1225,44 @@ nav ul li a:hover {
   line-height: 0;
 
 }
+
+#nps-div {
+  margin: 0 !important;
+}
+
+#nps-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-right: 20px;
+
+}
+
+.nps-icon {
+  margin-bottom: -40px;
+  margin-top: 40px;
+}
+
+#nps-text {
+  margin-top: -35px;
+  margin-bottom: 35px;
+}
+
+
+#nps-arrow-left,
+#nps-arrow-right {
+  background: none;
+  color: #123b77;
+}
+#nps-arrow-left {
+  margin-right: 5px;
+}
+#nps-arrow-right {
+  margin-left: 5px;
+}
+
+
 
 @media (max-width: 281px) {
   .nossos-numeros-title {

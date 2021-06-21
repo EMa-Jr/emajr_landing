@@ -657,13 +657,48 @@
         <p class="nossos-numeros-title">856 PROJETOS</p>
         <p class="nossos-numeros-text">realizados</p>
       </div>
-      <div class="nossos-numeros-card">
-        <i class="nossos-numeros-icon" data-feather="smile" color="#030130"></i>
-        <p class="nossos-numeros-title">100</p>
-        <p class="nossos-numeros-text">NPS</p>
+      <div class="nossos-numeros-card" id="nps-div">
+        <i class="nossos-numeros-icon nps-icon" data-feather="smile" color="#030130"></i>
+        <div id="nps-section">
+          <button 
+            onclick={leftNpsArrow()} 
+            id="nps-arrow-left"
+          >
+
+          <!-- <i class="nps-arrow" color="#123b77" data-feather="arrow-left"></i>anterior -->
+          anterior<hr/>
+          </button>
+          
+          <p class="nossos-numeros-title" id="nps-number">8,5</p>
+
+          <button 
+            onclick={rightNpsArrow()} 
+            id="nps-arrow-right"
+          >
+
+          <!-- atual<i class="nps-arrow" color="#123b77" data-feather="arrow-right"></i> -->
+
+          </button>
+        </div>
+        <p class="nossos-numeros-text" id="nps-text">NPS</p>
       </div>
     </div>
   </div>
+
+  <script>
+    npsNumber = document.getElementById("nps-number");
+    leftArrow = document.getElementsById("nps-arrow-left");
+    rightArrow = document.getElementsById("nps-arrow-right");
+
+    function leftNpsArrow() {
+      npsNumber.innerHTML = "8,5";
+    }
+
+    function rightNpsArrow() {
+      npsNumber.innerHTML = "10";
+    }
+
+  </script>
 
 <!---------------------------------------------------------DEPOIMENTOS---------------------------------------------------------->
 <!-- Slider main container -->
@@ -719,7 +754,7 @@
         </div>
       </div>
     </div>
-    <form id="contato-form">
+    <form method="POST" id="contato-form" action="./email.php">
       <input type="text" id="fname" name="fname" placeholder="Nome">
       <input type="text" id="femail" name="femail" placeholder="E-mail">
       <input type="text" id="fcel" name="fcel" placeholder="Celular">
@@ -758,7 +793,7 @@
       </div>
       <div class="footer-column">
         <strong>CONTATO</strong>
-        <p><a target="_blank" href="#"><i class="footer-icon" data-feather="mail" color="white"></i>contato@emajunor.com</a></p>
+        <p><a target="_blank" href="#"><i class="footer-icon" data-feather="mail" color="white"></i>contato@emajunior.com</a></p>
         <p><a target="_blank" href="#"><i class="footer-icon" data-feather="phone" color="white"></i>(42) 99999-9999</a></p>
         <p><a target="_blank" href="https://www.facebook.com/ema.junior/"><i class="footer-icon" data-feather="facebook" color="white"></i>@ema.junior</a></p>
         <p><a target="_blank" href="https://www.instagram.com/ema.junior/?hl=pt-br"><i class="footer-icon" data-feather="instagram" color="white"></i>@ema.junior</a></p>
@@ -834,6 +869,18 @@
           slidesPerView: 1
         },
       }    
+    });
+
+    var swiper3 = new Swiper('.swiper3', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },    
     });
   </script>
 

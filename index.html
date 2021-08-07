@@ -27,6 +27,7 @@
   <header>
     <nav id="navbar" class="transparent">
       <ul id="desktop-navbar">
+        <img class="noDisplayOnMobile" id="nav-logo" src="./src/images/logo-white.png" alt="logo-white">
         <li><a class="active noDisplayOnMobile" href="#">Início</a></li>
         <li><a class="noDisplayOnMobile" id="teste" href="#about">Sobre nós</a></li>
         <li><a class="noDisplayOnMobile" href="#portfolio">Portfólio</a></li>
@@ -58,12 +59,10 @@
 
   </div>
 
-  <video src="../src/images/header-video4.mp4" autoplay muted loop id="header-video"></video>
+  <video src="../src/images/header-video.mp4" autoplay muted loop id="header-video"></video>
   <script>
     document.getElementById('header-video').play();
   </script>
-
-  <!--<div id="particles-container"></div>-->
 
 <!---------------------------------------------------------SOBRE-NÓS--------------------------------------------------------->
 
@@ -101,16 +100,14 @@
                             <button class="nav-link active" class="mvv-title" data-bs-toggle="tab"
                                 data-bs-target="#process" type="button" role="tab" aria-controls="process"
                                 aria-selected="true">
-                                <i class="fas fa-route fa-sm"></i>
-                                <i class="about-button-icon active" data-feather="book" color="black"></i>Missão
+                                Missão
                             </button>
                         </li>
                         <li class="nav-item" role="presentation" data-aos="zoom-in" delay="100">
                             <button class="nav-link" class="mvv-title" data-bs-toggle="tab"
                                 data-bs-target="#strategy" type="button" role="tab" aria-controls="strategy"
                                 aria-selected="false">
-                                <i class="fas fa-cogs fa-sm"></i>
-                                <i class="about-button-icon" data-feather="eye" color="black"></i>Visão
+                                Visão
                             </button>
                         </li>
                     </ul>
@@ -565,7 +562,7 @@
       <div>
         <p>CIPP- Campus Uvaranas - UEPG,</p>
         <p>Uvaranas, Ponta Grossa - PR</p>
-        <p>84030-300</p>
+        <p>84030-900</p>
       </div>
       <div>
         <p>vendas@emajunior.com</p>
@@ -577,7 +574,7 @@
         </div>
       </div>
     </div>
-    <form method="POST" id="contato-form" action="https://formsubmit.co/marketing@emajunior.com.br">
+    <form method="POST" id="contato-form" action="https://formsubmit.co/contato@emajunior.com">
       <input type="hidden" name="_subject" value="Contato EMa-jr">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://www.emajunior.com/thanks">
@@ -598,7 +595,7 @@
 
   <footer>
     <div class="footer-footer">
-      <div class="footer-column">
+      <div class="footer-column" id="footer-logo">
         <img src="../src/images/footer-logo-branca.png" alt="EMa-Jr">
       </div>
       <div class="footer-column">

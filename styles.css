@@ -236,15 +236,15 @@ nav ul li a:hover {
 }
 
 @media (min-height: 811px) and (max-height: 813px) {
-  .home {
-    margin-bottom: 30px;
-  }
+  /* .home {
+    margin-bottom: 10px;
+  } */
   #header-video {
-    margin-top: -21vh;
+    margin-top: -18vh;
   }
 
   #logo {
-    top: 160px;
+    top: 190px;
   }
 
   #First-title {
@@ -633,6 +633,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   height: auto;
+  margin-top: 10vh;
 }
 
 .carousel-cell {
@@ -654,13 +655,16 @@ nav ul li a:hover {
   border-radius: 50px 50px 10px 10px;
 }
 
-@media (min-height: 811px) and (max-height: 824px) {
+@media (min-height: 811px) and (max-height: 813px) {
   .carousel-cell {
-    margin: 35vh 3vh 15vh 0 !important;
+    margin: 40vh 3vh 15vh 0 !important;
+  }
+  #logo {
+    height: 100px;
   }
 
   .carousel-cell:last-child {
-    margin: 35vh 3vh 15vh 0;
+    margin: 35vh 3vh 15vh 0 !important;
   }
 
 }

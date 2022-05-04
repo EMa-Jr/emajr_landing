@@ -6,7 +6,8 @@ particlesJS.load('particles-servicos', 'particlesjs-config.json');
 const swiper = new Swiper('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
+  loop: false,
+  slidesPerView: 3,
 
   // If we need pagination
   pagination: {
@@ -17,6 +18,24 @@ const swiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+
+  breakpoints: {
+    1366: {
+      slidesPerView: 3
+    },
+    1920: {
+      sliderPerView: 4
+    },
+    1048: {
+      slidesPerView: 2
+    },
+    600: {
+      slidesPerView: 1
+    },
+    280: {
+      slidesPerView: 1
+    }
   },
 
   // And if we need scrollbar
